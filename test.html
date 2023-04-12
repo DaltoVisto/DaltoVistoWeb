@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8">
+		<title>Dalto Visto Test</title>
+		<link rel="stylesheet" type="text/css" href="css/test.css">
+		<title>Dalto Visto</title>
+		<link rel="shortcut icon" type="image/x-icon" href="img/logo.png">
+	</head>
+	<body>
+		<header>
+			<div class="boxlogo">
+				<a href="index.html"><img src="img/logo.png" width="70px"></a>
+			</div>
+			<nav>
+				<ul class="ulheader">
+					<li class="listaheader">
+						<a href="index.html" class="linkheader">Inicio</a>
+					</li>
+					<li class="listaheader">
+						<a href="contacto.html" class="linkheader">Contacto</a>
+					</li>
+					<li class="listaheader">
+						<a href="info.html" class="linkheader">Más info</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<main class="boxjugar">
+			<p>Número de preguntas:</p>
+			<p id="npregunta"></p>
+			<p>¿Que número distingis?</p>
+			<img id="imgpregunta" src="img/test1.jpg" width="200" height="200">
+			<p id="textocorrecto"></p>
+			<p>Respuestas correcta:</p>
+			<p id="contadorcorrecta">0</p>
+			
+
+			<button id="btn1" onclick="bien(id)"  class="botones">8</button>
+			<button id="btn2"  onclick="bien(id)" class="botones">12</button>
+			<button id="btn3" onclick="bien(id)"  class="botones">24</button>
+			<button id="btn4" onclick="bien(id)"  class="botones">No distingo ningun numero</button>
+			<button id="btn5" onclick="bien(id)"  class="botones">Ningúno de los anteriores</button>
+			<button  id="btnsiguiente" class="botonsiguiente" onclick="campregunta()">Siguiente pregunta</button>
+
+			<a href="resultado.html"><button class="botonsiguiente" id="btnres">Ver resultados</button></a>
+		</main>
+		<script type="text/javascript" src="fuction.js" ></script>
+		<footer>
+			<div>
+				<a href="index.html"><img src="img/logo.png" width="200px"></a>
+			</div>
+			<div>
+				<ul class="ul1">
+					<li class="listafooter">
+						<a href="index.html" class="linkheader">Inicio</a>
+					</li>
+					<li class="listafooter">
+						<a href="contacto.html" class="linkheader">Contacto</a>
+					</li>
+					<li class="listafooter">
+						<a href="info.html" class="linkheader">Más info</a>
+					</li>
+				</ul>
+			
+			</div>
+			<div>
+				<p class="texfooter">Colegio Mano Amiga</p>
+				<p class="texfooter">Pf: Andres Obregon</p>
+				<p class="texfooter">Owners: Juan Irigoyen, Agustina Esteban y Bruno Sestua</p>
+			</div>
+		<a href="https://www.instagram.com/daltovisto/" target="_blank"><img src="img/Instagram.jpg" class="logowhats"></a>
+		<script type="text/javascript" src="js/fuction.js"></script>
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2? family= Open+Sans:ital@1 & display=swap');
+
+ *
+{
+	font-family: 'Open Sans', sans-serif;
+	margin: 0px;
+}
+header
+{
+	display: grid;
+	grid-template-columns: 74px 1fr;
+	align-items: center;
+	align-content: center;
+	justify-items: end;
+	font-size: 15px
+	padding-right: 5px;
+	background-color: #3a3838;
+
+}
+
+
+body
+{
+	background-color: #dfdfdf;
+	display: grid;
+}
+
+
+ul
+{
+	list-style: none;
+}
+a
+{
+	text-decoration: none;
+	color: black;
+	font-size: 20px;
+}
+a:hover
+{
+	color: #dfe7fd;
+}
+.linkheader
+{
+	text-decoration: none;
+	color: #d9d9d9f0;
+	font-size: 25px;
+}
+.linkheader:hover
+{
+	color: #dfe7fd;
+}
+
+main
+{
+	display: grid;
+	align-items: center;
+	text-align: center;
+	align-content: center;
+	padding-bottom: 30px;
+}
+
+footer
+{
+	margin-top: 55px;
+	padding-top: 35px 
+	padding: 20px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	align-items: center;
+	text-align: center;
+	justify-items: start;
+	background-color:  #3a3838; 
+}
+
+.texfooter
+{
+	font-size: 20px;
+	padding: 15px;
+	color: white;
+}
+.listafooter
+{
+	padding: 7px;
+	font-size: 20px;
+}
+
+.linkheader
+{
+	text-decoration: none;
+	color: #d9d9d9f0;
+	font-size: 25px;
+}
+.linkheader:hover
+{
+	color: #dfe7fd;
+}
+.ulheader
+{
+	display: inline-flex;
+	list-style: none;
+	color: black;
+}
+.listaheader
+{
+	padding: 25px;
+}
+h1
+{
+	text-align: center;
+	font-size: 35px;
+	margin: 10px;
+}
+.boxtituloinicio
+{
+	text-align: center;
+	background-image: url("banervial.jpg");
+	height: 400px;
+	align-items: center;
+}
+form
+{
+	display: grid;
+	justify-content: center;
+	justify-items: center;
+	margin: 80px;
+}
+label
+{
+	font-size: 25px;
+	padding: 10px;
+}
+input
+{
+	width: 300px;
+	height: 30px;
+	border: none;
+	border-bottom: solid color: gray;
+	transition: 1s;
+
+}
+input:hover
+{
+	width: 350px;
+	height: 40px;
+}
+.logowhats
+{
+	width: 70px;
+	border-radius: 50px;
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	transition: 1s;
+}
+.logowhats:hover
+{
+	width: 80px;
+}
+.botonform
+{
+	height: 50px;
+	width: 200px;
+	border-radius: 10px;
+	background-color: #adadad ;
+	margin: 5px;
+	border: none;
+	margin-top:10px;
+}
+
+.botonform:hover
+{
+	background-color: #d1d1d1 ;
+	transform: scale(1.1);
+	
+}
+}
+.botonform:Hover
+{
+	background-color: white;
+	width: 150px;
+	height: 45px;
+}
+
+.ig
+{
+	width: 700px;
+	border: none;
+}
+
+section
+{
+	align-content: center;
+	justify-content: center;
+	align-items: center;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+h2
+{
+	margin: 40px;
+}

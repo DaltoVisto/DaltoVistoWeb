@@ -1,0 +1,484 @@
+@import url('https://fonts.googleapis.com/css2? family= Open+Sans:ital@1 & display=swap');
+
+ *
+{
+	font-family: 'Open Sans', sans-serif;
+	margin: 0px;
+}
+h3{
+	font-size: 30px;
+}
+body
+{
+background-color: #dfdfdf;
+display: grid;
+grid-template-columns: 1fr;
+}
+
+.h2dalto
+{
+	color: black;
+}
+
+.boxtitulo
+{
+	padding: 10px;
+}
+
+.productos
+{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	animation: desplazar;
+  transform: translateX(-100%);
+ 	animation-duration: 1.0s;
+  animation-delay: 0.4s;
+ 	animation-fill-mode: forwards;
+ 	margin: 20px;
+}
+.farnsworth-div
+{
+	display: grid;
+	justify-items: center;
+	align-content: center;
+}
+.productos-foot
+{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	margin: 20px;
+	align-content: center;
+}
+.img-productosej
+{
+	border-radius: 20px;
+}
+.pobjetos
+{
+	max-width: 600px;
+}
+.pgafasytest
+{
+	max-width: 1200px;
+}
+.mainproductos
+{
+	display: grid;
+	justify-items: center;
+	padding-top: 20px;
+	margin: 10px;
+
+}
+header
+{
+	display: grid;
+	grid-template-columns: 74px 1fr;
+	align-items: center;
+	align-content: center;
+	justify-items: end;
+	font-size: 15px
+	padding-right: 5px;
+	background-color: #3a3838;
+
+}
+
+body
+{
+	background-color: #dfdfdf;
+	text-align: center;
+}
+
+.ul1
+{
+	list-style: none;
+}
+a
+{
+	text-decoration: none;
+	color: black;
+	font-size: 20px;
+}
+a:hover
+{
+	color: #dfe7fd;
+}
+.linkheader
+{
+	text-decoration: none;
+	color: #d9d9d9f0;
+	font-size: 25px;
+}
+.linkheader:hover
+{
+	color: #dfe7fd;
+}
+.ulheader
+{
+	display: inline-flex;
+	list-style: none;
+	color: black;
+}
+.listaheader
+{
+	padding: 25px;
+}
+
+.mainindex
+{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	align-items: center;
+	align-content: center;
+	justify-items: center;
+
+	border-bottom: solid 2px black;
+	padding-bottom: 30px;
+
+}
+footer
+{
+	margin-top: 55px;
+	padding-top: 35px 
+	padding: 20px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	align-items: center;
+	text-align: center;
+	justify-items: start;
+	background-color:  #3a3838; 
+}
+.boxdiv
+{
+	align-items: center;
+	text-align: center; 
+	width: 350px;
+	height: 400px;
+	padding: 10px;
+	margin: 10px;
+	display: grid;
+	justify-items: center;
+	box-shadow: 0px 3px 23px 17px rgba(125,105,105,0.87);
+	-webkit-box-shadow: 0px 3px 23px 17px rgba(125,105,105,0.87);
+	-moz-box-shadow: 0px 3px 23px 17px rgba(125,105,105,0.87);
+	border-radius: 10px;
+	background-color: #dddddd70;
+}
+h1
+{
+	text-align: center;
+	font-size: 50px;
+	color: black;
+}
+
+.h1Inicio
+{
+	text-align: center;
+	font-size: 50px;
+	color: white;
+}
+.textdiv1
+{
+	font-size: 20px;
+	padding: 10px;
+}
+.textdiv2
+{
+	font-size: 20px;
+	padding: 10px;
+}
+.textdiv3
+{
+	font-size: 20px;
+	padding: 10px;
+}
+.boxtituloinicio
+{
+	
+	align-content: center;
+	justify-content: center;
+	text-align: center;
+	height: 100px;
+	align-items: center;
+	top: -400px;
+	position:relative;
+
+}
+video
+{
+	width: 100%
+}
+
+.boxtest
+{
+	height: 50px;
+	width: 300px;
+	border-radius: 10px;
+	background-color: #adadad ;
+	margin: 28px;
+}
+button
+{
+	height: 50px;
+	width: 300px;
+	border-radius: 10px;
+	background-color: #adadad ;
+	margin: 5px;
+	border: none;
+}
+.botonlentes
+{
+	margin-top: 44px;
+}
+button:hover
+{
+	background-color: #d1d1d1 ;
+	
+}
+.texfooter
+{
+	font-size: 20px;
+	padding: 15px;
+	color: white;
+}
+.listafooter
+{
+	padding: 7px;
+	font-size: 20px;
+}
+.section_img
+{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	align-items: center;
+	align-content: center;
+	justify-items: center;
+
+}
+.hInicio
+
+{
+	font-size: 35px;
+	color: white;
+}
+
+h2
+{
+	font-size: 35px;
+	color: black;
+}
+
+
+
+.preguntas
+{
+	color: black;
+}
+.boximglentes
+{
+	padding-top: 45px;
+}
+.textimg
+{
+	font-size: 30px;
+}
+.imagen
+{
+	border-radius: 8px;
+}
+.boximg
+{
+	align-items: center;
+	text-align: center;
+	width: 500px;
+	height: 500px;
+	align-content: center;
+	justify-items: center;
+	display: grid;
+	animation: desplazar;
+  	transform: translateX(-100%);
+ 	animation-duration: 1.0s;
+  	animation-delay: 1.0s;
+ 	animation-fill-mode: forwards;
+}
+
+.boximagen
+{
+	align-items: center;
+	text-align: center;
+	width: 500px;
+	height: 500px;
+	align-content: center;
+	justify-items: center;
+	display: grid;
+	animation: desplazar;
+  	transform: translateX(-100%);
+ 	animation-duration: 1.0s;
+  	animation-delay: 1.0s;
+ 	animation-fill-mode: forwards;
+}
+
+@keyframes desplazar{
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+}
+.logowhats
+{
+	width: 70px;
+	border-radius: 50px;
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	transition: 1s;
+}
+.logowhats:hover
+{
+	width: 80px;
+}
+
+p
+{
+	text-align: center;
+	padding: 10px;
+	font-size: 20px;
+}
+
+h1
+{
+	padding: 10px;
+}
+.pres
+{
+	padding: 20px;
+	font-size: 20px;
+}
+.h2res
+{
+	font-size: 30px;
+}
+.mainres
+{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+
+	justify-items: center;
+	align-items: center;
+}
+.divres
+{
+	display: none;
+	text-align: center;
+}
+.pproductos
+{
+	font-size: 40px;
+	padding-left: 10px;
+}
+
+.ishihara
+{
+	font-size: 20px;
+}
+
+.ishiharah3
+{
+	font-size: 25px;
+	padding: 15px;
+}
+
+@media (max-width: 415px){
+	.mainres{
+		display: grid;
+		grid-template-columns:1fr;
+
+	}
+
+	.boxtituloinicial
+	{
+		display: grid;
+	}
+
+	#ojo1{
+		display: none;
+	}
+	header{
+		display: grid;
+	grid-template-columns: 100px 100px;
+	align-items: center;
+	}
+	.boxtituloinicio
+	{
+		align-items: center;
+		display: grid;
+	}
+	section{
+		display: grid;
+		grid-template-columns: 1fr;
+	}
+	.boximagen{
+		display: none;
+	}
+
+	.textimg
+	{
+		width: 400px;
+		font-size: 24px;
+	}
+	@media only (width: 415px){
+		.boxtituloinicio{
+			width: 300px;
+			bottom: -200px;
+		}
+		.hInicio{
+			width: 300px;
+			font-size: 10px;
+		}
+	}
+}
+.logowhats
+{
+	width: 70px;
+	border-radius: 50px;
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	transition: 1s;
+}
+.logowhats:hover
+{
+	width: 80px;
+}
+.botonform
+{
+	height: 50px;
+	width: 200px;
+	border-radius: 10px;
+	background-color: #adadad ;
+	margin: 5px;
+	border: none;
+	margin-top:10px;
+}
+
+.botonform:hover
+{
+	background-color: #d1d1d1 ;
+	transform: scale(1.1);
+	
+}
+}
+.botonform:Hover
+{
+	background-color: white;
+	width: 150px;
+	height: 45px;
+}
+
+.ig
+{
+	width: 700px;
+	border: none;
+}
