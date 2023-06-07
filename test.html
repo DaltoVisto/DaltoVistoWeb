@@ -1,76 +1,75 @@
 <!DOCTYPE html>
 <html>
 	<head>
-	<meta charset="utf-8">
-		<title>Dalto Visto Test</title>
-		<link rel="stylesheet" type="text/css" href="css/test.css">
-		<title>Dalto Visto</title>
+		<title>Test De Ishihara</title>
+		<meta charset="utf-8">
+		<meta name="description" content="Daltovisto es un proyecto que busca concientizar y detectar el daltonismo">
+		<meta name="keyboard" content="daltonismo, vista, vision, daltovisto, dislexia, ishihara, John Dalton, ojo, ocular, emfermedad, test de daltonismo">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="css/estilo-prueba.css">
 		<link rel="shortcut icon" type="image/x-icon" href="img/logo.png">
+		<meta property="og:title" content="Daltovisto-sitio web sobre daltonismo">
+		<meta property="og:image" content="http://daltovisto.com.ar">
+		<meta property="og:author" content="Agustina Esteban, Bruno Sestúa y Juan Irigoyen">
 	</head>
 	<body>
-		<header>
-			<div class="boxlogo">
-				<a href="index.html"><img src="img/logo.png" width="70px"></a>
-			</div>
-			<nav>
-				<ul class="ulheader">
-					<li class="listaheader">
-						<a href="index.html" class="linkheader">Inicio</a>
-					</li>
-					<li class="listaheader">
-						<a href="contacto.html" class="linkheader">Contacto</a>
-					</li>
-					<li class="listaheader">
-						<a href="info.html" class="linkheader">Más info</a>
-					</li>
-				</ul>
-			</nav>
+	<!--COMIENZA EL HEADER-->
+	<header class="header-test">
+		<!--BARRA DE NAVEGACION-->
+		<nav class="navtest">
+			<a href="index.html"><img src="img/logo.png" width="70px"></a>
+			<a href="index.html" class="linkheader">Inicio</a>
+			<a href="contacto.html" class="linkheader">Contacto</a>
+			<a href="info.html" class="linkheader">Más info</a>
+
+		</nav>
 		</header>
 		<main class="boxjugar">
+			<br>
 			<p>Número de preguntas:</p>
+			<br>
 			<p id="npregunta"></p>
-			<p>¿Que número distingis?</p>
+			<p>¿Que número distinguís?</p>
 			<img id="imgpregunta" src="img/test1.jpg" width="200" height="200">
 			<p id="textocorrecto"></p>
-			<p>Respuestas correcta:</p>
+			<p>Respuestas correctas:</p>
 			<p id="contadorcorrecta">0</p>
 			
 
 			<button id="btn1" onclick="bien(id)"  class="botones">8</button>
 			<button id="btn2"  onclick="bien(id)" class="botones">12</button>
 			<button id="btn3" onclick="bien(id)"  class="botones">24</button>
-			<button id="btn4" onclick="bien(id)"  class="botones">No distingo ningun numero</button>
-			<button id="btn5" onclick="bien(id)"  class="botones">Ningúno de los anteriores</button>
+			<button id="btn4" onclick="bien(id)"  class="botones">No distingo ningún número</button>
+			<button id="btn5" onclick="bien(id)"  class="botones">Ninguno de los anteriores</button>
 			<button  id="btnsiguiente" class="botonsiguiente" onclick="campregunta()">Siguiente pregunta</button>
+			<br>
 
 			<a href="resultado.html"><button class="botonsiguiente" id="btnres">Ver resultados</button></a>
 		</main>
-		<script type="text/javascript" src="fuction.js" ></script>
+		<script type="text/javascript" src="js/fuction.js" ></script>
+<!--FOOTER-->
 		<footer>
-			<div>
-				<a href="index.html"><img src="img/logo.png" width="200px"></a>
-			</div>
-			<div>
-				<ul class="ul1">
-					<li class="listafooter">
-						<a href="index.html" class="linkheader">Inicio</a>
-					</li>
-					<li class="listafooter">
-						<a href="contacto.html" class="linkheader">Contacto</a>
-					</li>
-					<li class="listafooter">
-						<a href="info.html" class="linkheader">Más info</a>
-					</li>
-				</ul>
-			
-			</div>
-			<div>
-				<p class="texfooter">Colegio Mano Amiga</p>
-				<p class="texfooter">Pf: Andres Obregon</p>
-				<p class="texfooter">Owners: Juan Irigoyen, Agustina Esteban y Bruno Sestua</p>
-			</div>
-		<a href="https://www.instagram.com/daltovisto/" target="_blank"><img src="img/Instagram.jpg" class="logowhats"></a>
-		<script type="text/javascript" src="js/fuction.js"></script>
+			<div class="contenedor-footer">
+				<div class="content-foo">
+					<h4>Owners:</h4>
+					<p>Juan Irigoyen</p>
+					<p>Agustina Esteban</p>
+					<p>Bruno Sestúa</p>
+				</div>
+				<div class="content-foo">
+					<h4>Redes sociales:</h4>
+					<p>Google: daltovisto.com.ar</p>
+					<p>Instagram: daltovisto</p>
+					<p>Tiktok: daltovisto</p>
+					<p>Youtube: Daltovisto</p>
+				</div>
+				<div class="content-foo">
+					<h4>Profesor:</h4>
+					<p>Andrés Obregón</p>
+				</div>
+			</div> 
+			<h2 class="titulo-final">&copy; Daltovisto2023 </h2>
 		</footer>
+		<a href="https://www.instagram.com/daltovisto/" target="_blank"><img src="img/Instagram.jpg" class="logowhats"></a>
 	</body>
-</html>
+</html

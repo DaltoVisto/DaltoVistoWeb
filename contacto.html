@@ -6,81 +6,82 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" type="text/css" href="css/contacto.css">
 		<link rel="shortcut icon" type="image/x-icon" href="img/logo.png">
+		<meta property="og:image" content="http://daltovisto.com.ar">
+		<meta property="og:author" content="Agustina Esteban, Bruno Sestúa y Juan Irigoyen">
+		<meta name="keyboard" content="daltonismo, vista, vision, daltovisto, dislexia, ishihara, John Dalton, ojo, ocular, emfermedad, test de daltonismo">
 	<body>
+		<!--COMIENZA EL HEADER-->
 		<header>
-			<div>
+			<!--BARRA DE NAVEGACION-->
+			<nav>
 				<a href="index.html"><img src="img/logo.png" width="70px"></a>
-			</div>
-			<nav>		
-				<ul class="ulheader">
-					<li class="listaheader">
-						<a href="index.html" class="linkheader">Inicio</a>
-					</li>
-					<li class="listaheader">
-						<a href="contacto.html" class="linkheader">Contacto</a>
-					</li>
-					<li class="listaheader">
-						<a href="info.html" class="linkheader">Más info</a>
-					</li>
-				</ul>
-			</nav>
-		</header>
-		<main>
-				<h1>
-					¿Necesitas Ayuda?
-					<h2>Contactate con nosotros mediantes este formulario o por nuestra pagina de Instagram.</h2>
+				<a href="index.html" class="linkheader">Inicio</a>
+				<a href="contacto.html" class="linkheader">Contacto</a>
+				<a href="info.html" class="linkheader">Más info</a>
 
-				</h1>
-			<form>
+			</nav>
+			<!--IMAGEN DE FONDO-->
+			<h1 class="textos-header">Daltonismo</h1>
+		</section>
+		<!--WAVE-->
+				<div class="wave" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #ffffff;"></path></svg></div>
+		<section class="section_img">
+		</header>
+		<!--CIERRA EL HEADER-->
+		<main>
+				<h1>¿Necesitas Ayuda?</h1>
+				<h2>Contactate con nosotros mediantes este formulario o por nuestra pagina de Instagram.</h2>
+
+				
+			<form action="https://formspree.io/f/mbjbjlvw" method="post">
 				<label >Nombre:</label>
-				<input type="" name="" id="inputname">
+				<input type="" name="" id="inputname" required>
 				<label>Apellido:</label>
-				<input type="" name="" id="inputapellido">
+				<input type="" name="" id="inputapellido" required>
 				<label>Num.Telefono:</label>
-				<input type="number" name="" id="inputtel">
+				<input type="number" name="" id="inputtel" required>
 				<label>Mail:</label>
-				<input type="email" name="" id="inputmail">
+				<input type="email" name="" id="inputmail" required>
 				<label>Mensaje:</label>
-				<input type="" name="" id="inputmensaje">
-				<button class="botonform" onclick="validar()">Enviar</button>
+				<input type="" name="" id="inputmensaje" required>
+				<button class="botonform">Enviar</button>
 			</form>
 		<section>
 			<div>
 				<h2>¡Seguinos en instagram!</h2>
-				<button class="ig"><a href="https://www.instagram.com/daltovisto/" target="_blank"><img src="img/DaltoVisto.png" width="700 class; imginsta"></a></button>
+				<button class="ig"><a href="https://www.instagram.com/daltovisto/" target="_blank"><img src="img/DaltoVisto.png" width="700" class="imginsta"></a></button>
 			</div>
 			<div>
 				<h2>¡Mira nuestro video en youtube!</h2>
-				<iframe width="700" height="644" src="https://www.youtube.com/embed/UHcp-1KSTsQ"></iframe>
+				<iframe src="https://www.youtube.com/embed/UHcp-1KSTsQ"></iframe>
 			</div>
 		</section>
 		</main>
 		<footer>
-			<div>
-				<a href="index.html" target="_blank"><img src="img/logo.png" width="200px"></a>
-			</div>
-			<div>
-				<ul>
-					<li class="listafooter">
-						<a href="index.html" class="linkheader">Inicio</a>
-					</li>
-					<li class="listafooter">
-						<a href="contacto.html" class="linkheader">Contacto</a>
-					</li>
-					<li class="listafooter">
-						<a href="info.html" class="linkheader">Más info</a>
-					</li>
-				</ul>
-			
-			</div>
-			<div>
-				<p class="texfooter">Colegio Mano Amiga</p>
-				<p class="texfooter">Pf: Andres Obregon</p>
-				<p class="texfooter">Owners: Juan Irigoyen y Agustina Esteban</p>
-			</div>
+			<!--FOOTER-->
+			<div class="contenedor-footer">
+				<div class="content-foo">
+					<h4>Owners:</h4>
+					<p>Juan Irigoyen</p>
+					<p>Agustina Esteban</p>
+					<p>Bruno Sestúa</p>
+				</div>
+				<div class="content-foo">
+					<h4>Redes sociales:</h4>
+					<p>Google: daltovisto.com.ar</p>
+					<p>Instagram: daltovisto</p>
+					<p>Tiktok: daltovisto</p>
+					<p>Youtube: Daltovisto</p>
+				</div>
+				<div class="content-foo">
+					<h4>Profesor:</h4>
+					<p>Andrés Obregón</p>
+				</div>
+			</div> 
+			<h2 class="titulo-final">&copy; Daltovisto2023 </h2>
 		</footer>
 		<a href="https://www.instagram.com/daltovisto/" target="_blank"><img src="img/Instagram.jpg" class="logowhats"></a>
-		<script type="text/javascript" src="contacto.js"></script>
+		<script type="text/javascript" src="js/contacto.js"></script>
 	</body>
 
 
