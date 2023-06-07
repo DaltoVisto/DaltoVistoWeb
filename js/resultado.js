@@ -7,27 +7,27 @@ respuestas_corrrctas()
 
 if (contadorcorrecta == 5)
 {
-	document.getElementById("dis5").style.display="block"
+	document.getElementById("dis5").style.display="grid"
 }
 if (contadorcorrecta == 4)
 {
-	document.getElementById("dis4").style.display="block"
+	document.getElementById("dis4").style.display="grid"
 }
 if (contadorcorrecta == 3)
 {
-	document.getElementById("dis3").style.display="block"
+	document.getElementById("dis3").style.display="grid"
 }
 if (contadorcorrecta == 2)
 {
-	document.getElementById("dis3").style.display="block"
+	document.getElementById("dis3").style.display="grid"
 }
 
 if (contadorcorrecta == 1)
 {
-	document.getElementById("dis3").style.display="block"
+	document.getElementById("dis3").style.display="grid"
 }
 if (contadorcorrecta == 0)
 {
-	document.getElementById("dis3").style.display="block"
+	document.getElementById("dis3").style.display="grid"
 }
 

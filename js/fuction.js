@@ -1,7 +1,7 @@
 var contador = 1;
 var contadorcorrecta = 0;
 var respuestacorrecta = "12";
-var respuestaincorrecta = distingo;
+var respuestaincorrecta = "distingo";
 
 document.getElementById("npregunta").innerHTML= contador;
 
@@ -24,7 +24,6 @@ function bien(id)
 		localStorage.correctas = contadorcorrecta;
 	}
 } 
-
 function campregunta()
 
 {
@@ -36,7 +35,7 @@ function campregunta()
 		document.getElementById("btn2").innerHTML="15";
 		document.getElementById("btn3").innerHTML="9";
 		document.getElementById("btn4").innerHTML="No distingo ningún número";
-		document.getElementById("btn5").innerHTML="Ningúno delos anteriores";
+		document.getElementById("btn5").innerHTML="Ninguno de los anteriores";
 		respuestacorrecta= "15";
 	}
 
@@ -45,8 +44,8 @@ function campregunta()
 		document.getElementById("btn1").innerHTML="96";
 		document.getElementById("btn2").innerHTML="36";
 		document.getElementById("btn3").innerHTML="5";
-		document.getElementById("btn4").innerHTML="No distingo ningun número";
-		document.getElementById("btn5").innerHTML="Ningúno delos anteriores";
+		document.getElementById("btn4").innerHTML="No distingo ningún número";
+		document.getElementById("btn5").innerHTML="Ninguno de los anteriores";
 		respuestacorrecta= "5";
 	}
 
@@ -55,8 +54,8 @@ function campregunta()
 		document.getElementById("btn1").innerHTML="74";
 		document.getElementById("btn2").innerHTML="2";
 		document.getElementById("btn3").innerHTML="15";
-		document.getElementById("btn4").innerHTML="No distingo ningun número";
-		document.getElementById("btn5").innerHTML="Ningúno delos anteriores";
+		document.getElementById("btn4").innerHTML="No distingo ningún número";
+		document.getElementById("btn5").innerHTML="Ninguno de los anteriores";
 		respuestacorrecta= "2";
 	}
 
@@ -65,21 +64,37 @@ function campregunta()
 		document.getElementById("btn1").innerHTML="6";
 		document.getElementById("btn2").innerHTML="8";
 		document.getElementById("btn3").innerHTML="9";
-		document.getElementById("btn4").innerHTML="No distingo ningun número";
-		document.getElementById("btn5").innerHTML="Ningúno delos anteriores";
+		document.getElementById("btn4").innerHTML="No distingo ningún número";
+		document.getElementById("btn5").innerHTML="Ninguno de los anteriores";
 		respuestacorrecta= "6";
 	}
 	if (contador == 6) {
+
 		document.getElementById("btnres").style.display="block"
+		
 	}
-	
+	if (contador == 6)
+	{
+		document.getElementById("btn1").disabled = true;
+		document.getElementById("btn2").disabled = true;
+		document.getElementById("btn3").disabled = true;
+		document.getElementById("btn4").disabled = true;
+		document.getElementById("btn5").disabled = true;
+		document.getElementById("btnsiguiente").style.display = "none";
+	}
+	else
+	{
+		document.getElementById("btn1").disabled = false;
+		document.getElementById("btn2").disabled = false;
+		document.getElementById("btn3").disabled = false;
+		document.getElementById("btn4").disabled = false;
+		document.getElementById("btn5").disabled = false;
+
+		document.getElementById("btnsiguiente").style.display = "none";
+
+	}
 
 	
-	document.getElementById("btn1").disabled = false;
-	document.getElementById("btn2").disabled = false;
-	document.getElementById("btn3").disabled = false;
-	document.getElementById("btn4").disabled = false;
-
-	document.getElementById("btnsiguiente").style.display = "none";
+	
 	
 }
