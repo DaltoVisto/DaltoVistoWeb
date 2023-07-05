@@ -437,20 +437,45 @@ a
 /*test farnsworth*/
 .color {
     display: inline-block;
-    width: 25px;
-    height: 25px;
+    width: 44px;
+    height: 44px;
     margin-right: 10px;
     margin-bottom: 10px;
     cursor: move;
-    border: 1px solid black;
+    border-radius: 100%;
+    
+  }
+  .drop{
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+    border: solid 1px white;
+    margin-right: 10px;
+    
+  }
+  #colors{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 30px;
+  }
+  #drops{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
   
-  .droptarget {
-    display: inline-block;
-    width: 25px;
-    height: 25px;
-    border: 1px solid black;
-    margin-right: 10px;
+  #main-farnsworth{
+    background-color: black;
+    display: grid;
+    justify-content: center;
+    padding-bottom: 5%;
+  }
+  #botones-fans
+  {
+    display: flex;
+    justify-content: center;
   }
   
   #check-btn {
@@ -542,3 +567,4 @@ a
   #color82 {background-color:#fda2b4 ;}
   #color83 {background-color:#ff9ea6 ;}
   #color84 {background-color:#fc9e9f ;}
+  
