@@ -42,7 +42,30 @@ function drop(ev) {
     contador = contador + 1;
     console.log(contador)
   
-}}
+}
+var data2 = document.getElementById(data)
+
+data2.addEventListener("dragstart", function(event) {
+  
+  event.dataTransfer.setData("text/plain", data2.draggable);
+});
+
+data2.addEventListener("dragend", function(event) {
+
+  data2.draggable = false;
+});
+
+data2.addEventListener("drop", function(event) {
+  event.preventDefault();
+});
+
+data2.addEventListener("dragover", function(event) {
+  event.preventDefault();
+});
+};
+
+
+
 
 
 document.addEventListener('DOMContentLoaded', () => {
