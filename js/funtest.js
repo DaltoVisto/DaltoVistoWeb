@@ -22,11 +22,14 @@ function drag(ev) {
 }
 var contador = 0;
 var contadorcomp = contador;
+var elementDropped = false;
+
 function drop(ev) {
   
   ev.preventDefault();
   var data = ev.dataTransfer.getData("text");
   ev.target.appendChild(document.getElementById(data));
+  var elementDropped = true;
   var match = data.match(/color(\d+)/);
   if (match) {
     var number = match[1];
@@ -62,6 +65,7 @@ data2.addEventListener("drop", function(event) {
 data2.addEventListener("dragover", function(event) {
   event.preventDefault();
 });
+
 };
 
 
