@@ -68,11 +68,6 @@ function campregunta()
 		document.getElementById("btn5").innerHTML="Ninguno de los anteriores";
 		respuestacorrecta= "6";
 	}
-	if (contador == 6) {
-
-		document.getElementById("btnres").style.display="block"
-		
-	}
 	if (contador == 6)
 	{
 		document.getElementById("btn1").disabled = true;
@@ -80,7 +75,8 @@ function campregunta()
 		document.getElementById("btn3").disabled = true;
 		document.getElementById("btn4").disabled = true;
 		document.getElementById("btn5").disabled = true;
-		document.getElementById("btnsiguiente").style.display = "none";
+		document.getElementById("btnsiguiente").style.display = "none"
+		
 	}
 	else
 	{

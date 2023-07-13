@@ -20,9 +20,10 @@ function allowDrop(ev) {
 function drag(ev) {
   ev.dataTransfer.setData("text", ev.target.id);
 }
-var contador = 0;
+var contador = 84;
 var contadorcomp = contador;
 var elementDropped = false;
+
 
 function drop(ev) {
   
@@ -41,8 +42,8 @@ function drop(ev) {
       console.log(dropzoneNumber);
     }
   }
-  if (number!==dropzoneNumber) {
-    contador = contador + 1;
+  if (number===dropzoneNumber) {
+    contador = contador - 1;
     console.log(contador)
   
 }
@@ -99,17 +100,19 @@ document.addEventListener('DOMContentLoaded', () => {
   function drop(e) {
     e.preventDefault();
     const draggableId = e.dataTransfer.getData('text/plain');
-    const draggable = document.getElementById(draggableId);
+    const draggables = document.getElementById(draggableId);
     const dropzone = e.target;
 
     if (dropzone.classList.contains('drop')) {
-      dropzone.appendChild(draggable);
+      dropzone.appendChild(draggables);
     }
   }
+const btnordenar = getElementById("ordenar-btn");
 
   function ordenar() {
     contador = 0;
-
+   
+    
     const sortedDraggables = Array.from(draggables).sort((a, b) => {
       const orderA = parseInt(a.getAttribute('data-order'));
       const orderB = parseInt(b.getAttribute('data-order'));
@@ -121,16 +124,33 @@ document.addEventListener('DOMContentLoaded', () => {
       dropzone.appendChild(draggable);
     });
   }
+  if(contador == 0)
+  {
+    document.getElementsByClassName("color").disabled = true;
+  }
 });
 function verificar() {
   
     
   if (contador >= 1) {
-    alert("Incorrecto, se equivoco en: " + contador )
-    location. reload()
+    Swal.fire({
+      icon: 'error',
+      title: 'Fallaste',
+      text: 'Se equivoco en: ' + contador,
+      showConfirmButton: false,
+      timer: 3500,
+  
+    })
+ 
   
   } else {
-    alert("Correcto")
+    Swal.fire({
+      position: 'center',
+      icon: 'success',
+      title: 'Correcto',
+      showConfirmButton: false,
+      timer: 3500,
+    })
    
   }
 }

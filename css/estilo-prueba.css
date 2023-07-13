@@ -568,3 +568,6 @@ a
   #color83 {background-color:#ff9ea6 ;}
   #color84 {background-color:#fc9e9f ;}
   
+  body {
+    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Helvetica, Arial, sans-serif; 
+  }
