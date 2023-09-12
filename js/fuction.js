@@ -75,9 +75,11 @@ function campregunta()
 		document.getElementById("btn3").disabled = true;
 		document.getElementById("btn4").disabled = true;
 		document.getElementById("btn5").disabled = true;
-		document.getElementById("btnsiguiente").style.display = "none"
+		document.getElementById("btnsiguiente").style.display = "none";
+		document.getElementById("btnres").style.display = "block";
 		
 	}
+
 	else
 	{
 		document.getElementById("btn1").disabled = false;
@@ -89,8 +91,58 @@ function campregunta()
 		document.getElementById("btnsiguiente").style.display = "none";
 
 	}
-
-	
-	
-	
 }
+	function resultados()
+		{
+
+
+			if (contadorcorrecta == 5)
+		{
+			swal({
+	 		 title: "Distinguiste los 5 números:",
+	 		 text: "Eso quiere decir que es muy poco probable que padezcas daltnismo, cualquier duda consulte con un profesional. ",
+			  icon: "success",
+					});
+		}
+		if (contadorcorrecta == 4)
+		{
+			swal({
+	 		 title: "Distinguiste 4 números:",
+	 		 text: "Eso quiere decir que es muy poco probable que padezcas daltnismo, cualquier duda consulte con un profesional. ",
+			  icon: "succes",
+					});
+		}
+		if (contadorcorrecta == 3)
+		{
+			swal({
+	 		 title: "Distinguiste 3 números:",
+	 		 text: "Eso quiere decir que podrias llegar a padecer una ausencia parcial de algún color. Recomendamos consultar a un oftalmólogo",
+			  icon: "warning",
+					});
+		}
+		if (contadorcorrecta == 2)
+		{
+			swal({
+	 		 title: "Distinguiste 2 números:",
+	 		 text: "Eso quiere decir que podrias llegar a padecer una ausencia parcial de algún color. Recomendamos consultar a un oftalmólogo",
+			  icon: "warning",
+					});
+		}
+
+		if (contadorcorrecta == 1)
+		{
+			swal({
+	 		 title: "Distinguiste 1 número:",
+	 		 text: "Eso quiere decir que podrias llegar a padecer ausencia de algún color. Recomendamos consultar a un oftalmólogo",
+			  icon: "warning",
+					});
+		}
+		if (contadorcorrecta == 0)
+		{
+			swal({
+	 		 title: "No distinguiste ningún número:",
+	 		 text: "Eso quiere decir que podrias llegar a padecer ausencia de colores. Recomendamos consultar a un oftalmólogo",
+			  icon: "warning",
+					});
+		}
+	}
