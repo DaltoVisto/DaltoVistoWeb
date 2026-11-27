@@ -1,123 +1,246 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<title>Dalto Visto Información</title>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" type="text/css" href="css/info.css">
-		<link rel="shortcut icon" type="image/x-icon" href="img/logo.png">
-		<meta property="og:image" content="http://daltovisto.com.ar">
-		<meta property="og:author" content="Agustina Esteban, Bruno Sestúa y Juan Irigoyen">
-		<meta name="keyboard" content="daltonismo, vista, vision, daltovisto, dislexia, ishihara, John Dalton, ojo, ocular, emfermedad, test de daltonismo">
-		<!-- Google tag (gtag.js) -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=G-7GC3DGMSS0"></script>
-		<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Información Científica, Tipos y Genética · DaltoVisto</title>
+    <meta name="description" content="Conocé la ciencia detrás del daltonismo: conos L, M y S, diferencia real entre protanopía, deuteranopía y tritanopía, estadísticas y simulador genético del cromosoma X." />
+    <link rel="shortcut icon" type="image/x-icon" href="img/logo.png" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7GC3DGMSS0"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+      gtag('config', 'G-7GC3DGMSS0');
+    </script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="index.html" class="brand-link">
+          <img src="img/logo.png" alt="DaltoVisto" class="brand-logo" width="38" height="38" />
+          <span>DaltoVisto</span>
+        </a>
+        <nav class="nav-links" aria-label="Navegación principal">
+          <a href="index.html" class="nav-link">Inicio</a>
+          <a href="test.html" class="nav-link">Test de Visión</a>
+          <a href="simulador.html" class="nav-link">Simulador</a>
+          <a href="info.html" class="nav-link">Más info</a>
+          <a href="contacto.html" class="nav-link">Contacto</a>
+        </nav>
+        <div class="header-actions">
+          <a href="test.html" class="btn btn-primary btn-sm header-cta">Hacer el Test</a>
+          <button type="button" id="mobile-menu-toggle" class="mobile-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-drawer">☰</button>
+        </div>
+      </div>
+      <div id="mobile-drawer" class="mobile-drawer">
+        <div class="mobile-drawer-links">
+          <a href="index.html">Inicio</a>
+          <a href="test.html">Test de Visión (Ishihara)</a>
+          <a href="newtest.html">Test de Farnsworth</a>
+          <a href="simulador.html">Simulador de Daltonismo</a>
+          <a href="info.html">Más info y Genética</a>
+          <a href="miopia.html">Salud Visual y Miopía</a>
+          <a href="contacto.html">Contacto</a>
+        </div>
+      </div>
+    </header>
 
-		gtag('config', 'G-7GC3DGMSS0');
-		</script>
-		<body>
-		<!--COMIENZA EL HEADER-->
-		<header class="header-test">
-			<!--BARRA DE NAVEGACION-->
-			<nav class="navtest">
-				<a href="index.html"><img src="img/logo.png" width="70px"></a>
-				<a href="index.html" class="linkheader">Inicio</a>
-				<a href="contacto.html" class="linkheader">Contacto</a>
-				<a href="info.html" class="linkheader">Más info</a>
-	
-			</nav>
-			</header>
-		<div class="boxtituloinicio">	
-			<h1>Daltonismo</h1>
-		</div>
-		<section class="contenedor-sobre-nosotros">	
-			<!--ILUSTRACION-->
-			<div>
-			<img id="ilu_info" src="img/ilu_info.png" class="imagen">
-			</div>
-			<div class="contenido-texto">
-				<h3>El grado de afectación es muy variable y oscila entre la falta de capacidad para discernir cualquier color (acromatopsia) y un ligero grado de dificultad para discriminar matices de rojo, verde y ocasionalmente azul, que son capaces las personas con visión normal del color o tricrómatas.</h3>
-			</div>
-		</div>
-	</section>
-		<MAIN class="maininfo">
-			<p>
-				A pesar de que la sociedad en general considera que el daltonismo pasa inadvertido en la vida diaria, supone un problema para los afectados en ámbitos tan diversos como valorar el estado de frescura de determinados alimentos, identificar códigos de colores de planos o elegir determinadas profesiones para las que es preciso superar un reconocimiento médico que implica identificar correctamente los colores (militar de carrera, piloto, capitán de marina mercante, policía, árbitro de fútbol, entre otras). Puede detectarse mediante test visuales específicos como las cartas de Ishihara.
-			</p>
-			
-			<p>
-				Es de carácter hereditario y está ligado al cromosoma X. En general, lo trasmiten las mujeres y lo padecen mayormente los hombres. Para que una mujer sea daltónica, tiene que tener afectados ambos cromosomas X, por lo que la frecuencia (0,5%) es muy inferior a la del hombre (1,5%).
-			</p>
-			<section id="sec_counter">
-				<div class="counter-container">
-					<h3>Mujeres con daltonismo</h3>
-					<i class="fab fa-twitter fa-3x"></i>
-					<div class="counter" data-target="1960000"></div>
-					
-				</div>
-			
-				<div class="counter-container">
-					<h3>Hombres con daltonismo</h3>
-					<i class="fab fa-youtube fa-3x"></i>
-					<div class="counter" data-target="59550000"></div>
-					
-				</div>
-			
-				<div class="counter-container">
-					<h3>Personas con daltonismo en Argentina</h3>
-					<i class="fab fa-facebook fa-3x"></i>
-					<div class="counter" data-target="449532"></div>
-					
-				</div>
-			</section>
-			<h2>La alteración al color se clasificará en:</h2>
-			<ul>
-				<li>
-					<b>Deuteranopía:</b> Alteración de la visión al color rojo. Puede ser total o parcial.
-				</li>
-				<li>
-					<b>Protanopía:</b> Alteración de la visión al color verde. Puede ser total o parcial.
-				</li>
-				<li>
-					<b>Tritanopía:</b> Alteración de la visión al color azul. Puede ser total o parcial.
-				</li>
-				<li>
-					<b>Acromatopsia:</b> Ceguera al color.
-				</li>
-			</ul>
-			<h2  class="h2res">Tipos de daltonismo:</h2>
-			<div class="tipos">
-				<img class="imgtipos" src="img/1ptipos.jpg">
-				<img class="imgtipos" src="img/2ptipos.jpg">
-			</div>
-		</MAIN>
-		<footer>
-			<!--FOOTER-->
-			<div class="contenedor-footer">
-				<div class="content-foo">
-					<h4>Owners:</h4>
-					<p>Juan Irigoyen</p>
-					<p>Agustina Esteban</p>
-					<p>Bruno Sestúa</p>
-				</div>
-				<div class="content-foo">
-					<h4>Redes sociales:</h4>
-					<p>Google: daltovisto.com.ar</p>
-					<p>Instagram: daltovisto</p>
-					<p>Tiktok: daltovisto</p>
-					<p>Youtube: Daltovisto</p>
-				</div>
-				<div class="content-foo">
-					<h4>Profesor:</h4>
-					<p>Andrés Obregón</p>
-				</div>
-			</div> 
-			<h2 class="titulo-final">&copy; Daltovisto2023 </h2>
-		</footer>
-		<a href="https://www.instagram.com/daltovisto/" target="_blank"><img src="img/Instagram.jpg" class="logowhats"></a>
-		<script src="js/info.js"></script>
-	</body>
+    <section class="page-banner">
+      <div class="container">
+        <div class="breadcrumb">
+          <a href="index.html">Inicio</a>
+          <span aria-hidden="true">/</span>
+          <span>Más información</span>
+        </div>
+        <h1>Ciencia, Estadísticas y Genética del Daltonismo</h1>
+        <p>El grado de afectación varía desde una dificultad leve para discriminar matices hasta la ausencia total de percepción cromática (acromatopsia).</p>
+      </div>
+    </section>
+
+    <main>
+      <!-- Contexto cotidiano + imagen -->
+      <section class="section">
+        <div class="container split-feature">
+          <div>
+            <span class="kicker">Impacto en la vida diaria</span>
+            <h2>Más allá de confundir dos colores</h2>
+            <p class="prose" style="margin-top:14px;">
+              Aunque muchas veces pasa inadvertido, el daltonismo influye en tareas concretas como evaluar si un alimento o carne está cocido o fresco, interpretar códigos de colores en mapas o planos escolares, elegir vestimenta o acceder a profesiones con requisitos cromáticos específicos (piloto, capitán de marina mercante, fuerzas de seguridad o árbitro).
+            </p>
+            <p class="prose" style="margin-top:12px;">
+              Es mayormente hereditario y ligado al <strong>cromosoma X</strong>. En la población general afecta aproximadamente al <strong>8% de los hombres (1 de cada 12)</strong> y al <strong>0,5% de las mujeres (1 de cada 200)</strong>, ya que las mujeres necesitan tener alterados ambos cromosomas X para manifestarlo, aunque pueden transmitirlo como portadoras.
+            </p>
+          </div>
+          <div style="display:flex; justify-content:center;">
+            <img src="img/ilu_info.png" alt="Ilustración educativa sobre percepción visual" style="max-width:380px; width:100%;" />
+          </div>
+        </div>
+      </section>
+
+      <!-- Contadores formateados -->
+      <section class="section section-muted">
+        <div class="container">
+          <div class="section-header">
+            <span class="kicker">Alcance poblacional</span>
+            <h2>Estimación de personas con daltonismo</h2>
+            <p class="section-lead">Cifras referenciales según prevalencia epidemiológica global y nacional (fuentes: OMS / NEI).</p>
+          </div>
+
+          <div class="kpi-strip">
+            <div class="kpi-card">
+              <h3>Mujeres en el mundo (est.)</h3>
+              <div class="kpi-value counter" data-target="1960000">1.960.000</div>
+              <p class="kpi-caption">Prevalencia aproximada del 0,5%</p>
+            </div>
+            <div class="kpi-card">
+              <h3>Hombres en el mundo (est.)</h3>
+              <div class="kpi-value counter" data-target="59550000">59.550.000</div>
+              <p class="kpi-caption">Prevalencia aproximada del 8% (1 de cada 12)</p>
+            </div>
+            <div class="kpi-card">
+              <h3>Personas en Argentina (est.)</h3>
+              <div class="kpi-value counter" data-target="449532">449.532</div>
+              <p class="kpi-caption">Detección clave en edad escolar</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Clasificación científica CORREGIDA -->
+      <section class="section">
+        <div class="container">
+          <div class="section-header">
+            <span class="kicker">Clasificación clínica</span>
+            <h2>Tipos principales de discromatopsia</h2>
+            <p class="section-lead">En la retina existen tres tipos de conos fotorreceptores: <strong>L (rojo)</strong>, <strong>M (verde)</strong> y <strong>S (azul)</strong>. Según qué cono falle o falte, se clasifica el daltonismo:</p>
+          </div>
+
+          <div class="grid-2">
+            <article class="card">
+              <span class="card-kicker">Eje Rojo · Conos L</span>
+              <h3>Protanopía y Protanomalía</h3>
+              <p>Alteración o ausencia de los conos sensibles al <strong>color rojo</strong>. Quienes tienen protanopía perciben el rojo mucho más oscuro o apagado y lo confunden con verdes, marrones y negros.</p>
+            </article>
+
+            <article class="card">
+              <span class="card-kicker">Eje Verde · Conos M</span>
+              <h3>Deuteranopía y Deuteranomalía</h3>
+              <p>Alteración o ausencia de los conos sensibles al <strong>color verde</strong>. Es la forma más común: provoca confusión entre matices rojos, verdes, naranjas y marrones.</p>
+            </article>
+
+            <article class="card">
+              <span class="card-kicker">Eje Azul-Amarillo · Conos S</span>
+              <h3>Tritanopía y Tritanomalía</h3>
+              <p>Alteración mucho menos frecuente en los conos sensibles al <strong>color azul</strong>. Se confunden tonos azules con verdes y amarillos con violetas o rosas claros.</p>
+            </article>
+
+            <article class="card">
+              <span class="card-kicker">Monocromacia</span>
+              <h3>Acromatopsia</h3>
+              <p>Condición muy rara donde existe ausencia o disfunción total de los tres tipos de conos, percibiéndose la realidad en escala de grises y brillos.</p>
+            </article>
+          </div>
+
+          <div class="card" style="margin-top:28px; align-items:center;">
+            <h3 style="margin-bottom:12px;">Comparación visual del espectro</h3>
+            <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:16px;">
+              <img src="img/1ptipos.jpg" alt="Visión normal frente a Protanopía (ausencia de rojo)" style="max-height:220px; border-radius:8px;" />
+              <img src="img/2ptipos.jpg" alt="Deuteranopía (ausencia de verde) frente a Tritanopía (ausencia de azul)" style="max-height:220px; border-radius:8px;" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Explorador Interactivo de Genética -->
+      <section class="section section-muted">
+        <div class="container">
+          <div class="section-header">
+            <span class="kicker">Simulador genético</span>
+            <h2>¿Cómo se hereda el daltonismo rojo-verde?</h2>
+            <p class="section-lead">Combiná la condición genética de madre y padre para ver las probabilidades en hijos e hijas.</p>
+          </div>
+
+          <div class="card">
+            <div class="form-row-2">
+              <div class="field">
+                <label for="genetics-mother">Madre (XX)</label>
+                <select id="genetics-mother">
+                  <option value="carrier" selected>Portadora (1 cromosoma X con daltonismo)</option>
+                  <option value="normal">Visión normal (no portadora)</option>
+                  <option value="affected">Con daltonismo (ambos X afectados)</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="genetics-father">Padre (XY)</label>
+                <select id="genetics-father">
+                  <option value="normal" selected>Visión normal (X sano, Y)</option>
+                  <option value="affected">Con daltonismo (X afectado, Y)</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="grid-2" style="margin-top:12px;">
+              <div class="card" style="background-color:var(--bg-canvas); box-shadow:none;">
+                <span class="card-kicker">Probabilidad en hijas (XX)</span>
+                <strong id="genetics-daughters" style="font-size:1.25rem; color:var(--accent-primary);"></strong>
+              </div>
+              <div class="card" style="background-color:var(--bg-canvas); box-shadow:none;">
+                <span class="card-kicker">Probabilidad en hijos varones (XY)</span>
+                <strong id="genetics-sons" style="font-size:1.25rem; color:var(--accent-primary);"></strong>
+              </div>
+            </div>
+
+            <p id="genetics-note" style="font-size:0.9375rem;"></p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <h4>DaltoVisto</h4>
+            <p style="color:var(--text-on-dark-muted); font-size:0.9375rem;">Proyecto estudiantil argentino sobre daltonismo y salud visual.</p>
+          </div>
+          <div>
+            <h4>Herramientas</h4>
+            <ul class="footer-list">
+              <li><a href="test.html">Test de Ishihara</a></li>
+              <li><a href="newtest.html">Test de Farnsworth</a></li>
+              <li><a href="simulador.html">Simulador en Vivo</a></li>
+              <li><a href="miopia.html">Guía sobre Miopía</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Equipo y Docente</h4>
+            <ul class="footer-list">
+              <li>Juan Irigoyen</li>
+              <li>Agustina Esteban</li>
+              <li>Bruno Sestúa</li>
+              <li>Profesor: Andrés Obregón</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Redes sociales</h4>
+            <ul class="footer-list">
+              <li><a href="https://daltovisto.com.ar" target="_blank" rel="noopener noreferrer">Web: daltovisto.com.ar</a></li>
+              <li><a href="https://www.instagram.com/daltovisto/" target="_blank" rel="noopener noreferrer">Instagram: @daltovisto</a></li>
+              <li><a href="https://www.tiktok.com/@daltovisto" target="_blank" rel="noopener noreferrer">TikTok: @daltovisto</a></li>
+              <li><a href="https://www.youtube.com/@Daltovisto" target="_blank" rel="noopener noreferrer">YouTube: DaltoVisto</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>&copy; 2023–2026 DaltoVisto</span>
+          <span>Contenido educativo revisado · No reemplaza diagnóstico oftalmológico.</span>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="js/common.js"></script>
+    <script type="module" src="js/info.js"></script>
+  </body>
 </html>

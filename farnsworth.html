@@ -1,113 +1,144 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<title>Test De farnsworth</title>
-		<meta charset="utf-8">
-		<meta name="description" content="Daltovisto es un proyecto que busca concientizar y detectar el daltonismo">
-		<meta name="keyboard" content="daltonismo, vista, vision, daltovisto, dislexia, ishihara, John Dalton, ojo, ocular, emfermedad, test de daltonismo">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" type="text/css" href="css/estilo-prueba.css">
-		<link rel="shortcut icon" type="image/x-icon" href="img/logo.png">
-		<meta property="og:title" content="Daltovisto-sitio web sobre daltonismo">
-		<meta property="og:image" content="http://daltovisto.com.ar">
-		<meta property="og:author" content="Agustina Esteban, Bruno Sestúa y Juan Irigoyen">
-		<!-- Google tag (gtag.js) -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=G-7GC3DGMSS0"></script>
-		<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guía del Test de Farnsworth · DaltoVisto</title>
+    <meta name="description" content="Conocé en qué consiste el Test de Farnsworth D-15 y FM-100 para medir la precisión cromática y probalo de forma interactiva." />
+    <link rel="shortcut icon" type="image/x-icon" href="img/logo.png" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7GC3DGMSS0"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+      gtag('config', 'G-7GC3DGMSS0');
+    </script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="index.html" class="brand-link">
+          <img src="img/logo.png" alt="DaltoVisto" class="brand-logo" width="38" height="38" />
+          <span>DaltoVisto</span>
+        </a>
+        <nav class="nav-links" aria-label="Navegación principal">
+          <a href="index.html" class="nav-link">Inicio</a>
+          <a href="test.html" class="nav-link">Test de Visión</a>
+          <a href="simulador.html" class="nav-link">Simulador</a>
+          <a href="info.html" class="nav-link">Más info</a>
+          <a href="contacto.html" class="nav-link">Contacto</a>
+        </nav>
+        <div class="header-actions">
+          <a href="newtest.html" class="btn btn-primary btn-sm header-cta">Probar Farnsworth</a>
+          <button type="button" id="mobile-menu-toggle" class="mobile-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-drawer">☰</button>
+        </div>
+      </div>
+      <div id="mobile-drawer" class="mobile-drawer">
+        <div class="mobile-drawer-links">
+          <a href="index.html">Inicio</a>
+          <a href="test.html">Test de Visión (Ishihara)</a>
+          <a href="newtest.html">Test de Farnsworth</a>
+          <a href="simulador.html">Simulador de Daltonismo</a>
+          <a href="info.html">Más info y Genética</a>
+          <a href="miopia.html">Salud Visual y Miopía</a>
+          <a href="contacto.html">Contacto</a>
+        </div>
+      </div>
+    </header>
 
-		gtag('config', 'G-7GC3DGMSS0');
-		</script>
-	</head>
-	<body>
-	<!--COMIENZA EL HEADER-->
-	<header class="header-farnsworth">
-		<div class="boxlogo">
-			
-		</div>
-		<!--BARRA DE NAVEGACION-->
-		<nav>
-			<a href="index.html"><img src="img/logo.png" width="70px"></a>
-			<a href="index.html" class="linkheader">Inicio</a>
-			<a href="contacto.html" class="linkheader">Contacto</a>
-			<a href="info.html" class="linkheader">Más info</a>
+    <section class="page-banner">
+      <div class="container">
+        <div class="breadcrumb">
+          <a href="index.html">Inicio</a>
+          <span aria-hidden="true">/</span>
+          <span>Test de Farnsworth</span>
+        </div>
+        <h1>Test de Farnsworth (D-15 y FM-100)</h1>
+        <p>Una prueba visual de ordenamiento cromático capaz de evaluar tanto alteraciones rojo-verde como azul-amarillo y medir la fineza de percepción.</p>
+      </div>
+    </section>
 
-		</nav>
-		<!--IMAGEN DE FONDO-->
-		<h1 class="textos-header-farnsworth">Test de Farnsworth</h1>
-	</section>
-	<!--WAVE-->
-			<div class="wave" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #ffffff;"></path></svg></div>
-	<section class="section_img">
-	</header>
-	<!--CIERRA EL HEADER-->
-	<!--INICIA MAIN-->
-			<!--ILUSTRACION-->
-			<main>
-				<section class="productos">
-					<h2 class="titulo">Test de Farnsworth</h2>
-				<section class="contenedor-sobre-nosotros">	
-					<div>
-						<img class="img-about-us" src="img/images.png" width="450px" class="imagen">
-					</div>
-					<div class="contenido-texto-pro">
-						<h3 class="h3titulo">¿Qué es?</h3>
-						<br>
-						<h3>La prueba de farnsworth D15 es un examen que sirve para clasificar las alteraciones de la visión del color, permitiendo conocer exactamente el tipo de defecto al color.</h3>	</div>
-					</div>
-					<div class="contenido-texto-pro">
-						<h3 class="h3titulo">¿En qué casos requiere?</h3>
-						<br>
-						<h3>
-							Esta prueba está indicada a realizarse en los siguientes casos:<br>
-							- Pacientes con inflamación o sospecha de inflamación del nervio óptico. </br>
-							- Pacientes a quienes se les ha realizado la prueba general de color con test de Ishihara y los resultados han presentado alguna anormalidad. </br>
-							- Pacientes con consumo de cloroquina y otras medicaciones que pueden causar toxicidad macular. </br>
-							- Pacientes con inflamación o sospecha de inflamación del nervio óptico.
-						</h3>
-						</div>
-						<div>
-						<img class="img-about-us" src="img/fansworthej2.jpg" width="450px" class="imagen">
-						</div>
-					</div>
-					<div>
-						<img class="img-about-us" src="img/fansworthej.jpg" width="450px" class="imagen">
-					</div>
-					<div class="contenido-texto-pro">
-						<h3 class="h3titulo">Realización del examen</h3>
-						<br>
-						<h3>Este examen es sencillo, el paciente se ubica en una mesa con superficie negra, deberá organizar quince botones de colores de acuerdo con un disco de referencia. La prueba se realiza dos veces en cada ojo de acuerdo a como organice los botones se determina la percepción al color.</h3>
-					</div>
-				</section>
-			</section>
-			<center><a href="newtest.html"><button>Hacer test</button></a></center>
-		</main>
-		<!--FOOTER-->
-		<footer>
-		
-			<div class="contenedor-footer">
-				<div class="content-foo">
-					<h4>Owners:</h4>
-					<p>Juan Irigoyen</p>
-					<p>Agustina Esteban</p>
-					<p>Bruno Sestúa</p>
-				</div>
-				<div class="content-foo">
-					<h4>Redes sociales:</h4>
-					<p>Google: daltovisto.com.ar</p>
-					<p>Instagram: daltovisto</p>
-					<p>Tiktok: daltovisto</p>
-					<p>Youtube: Daltovisto</p>
-				</div>
-				<div class="content-foo">
-					<h4>Profesor:</h4>
-					<p>Andrés Obregón</p>
-				</div>
-			</div> 
-			<h2 class="titulo-final">&copy; Daltovisto2023 </h2>
-		</footer>
-		<a href="https://www.instagram.com/daltovisto/" target="_blank"><img src="img/Instagram.jpg" class="logowhats"></a>
-	</body>
-</html
+    <main>
+      <section class="section">
+        <div class="container split-feature">
+          <img src="img/fansworthej2.jpg" alt="Fichas de colores del Test de Farnsworth" style="border-radius:12px; width:100%; max-width:440px; margin-inline:auto;" />
+          <div>
+            <span class="kicker">Descripción de la prueba</span>
+            <h2>¿Para qué sirve el Test de Farnsworth?</h2>
+            <p class="prose" style="margin-top:12px;">
+              A diferencia de las láminas de números, el Test de Farnsworth evalúa la capacidad del ojo para distinguir transiciones sutiles entre tonalidades vecinas. Permite orientar no solo déficits rojo-verde (Protan y Deutan), sino también del eje azul-amarillo (Tritan).
+            </p>
+            <p class="prose" style="margin-top:12px;">
+              En su formato clínico clásico (D-15 o 100 tonos), la persona se ubica frente a una superficie negra neutra y debe ordenar una serie de cápsulas de colores partiendo de una ficha de referencia fija.
+            </p>
+            <div style="margin-top:20px; display:flex; flex-wrap:wrap; gap:12px;">
+              <a href="newtest.html" class="btn btn-primary">Jugar Test de Farnsworth Online</a>
+              <a href="test.html" class="btn btn-secondary">Ir al Test de Ishihara</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-muted">
+        <div class="container split-feature">
+          <div>
+            <span class="kicker">Cómo funciona</span>
+            <h2>Realización paso a paso</h2>
+            <p class="prose" style="margin-top:12px;">
+              Se toma una ficha inicial fija como ancla y se colocan a su lado las fichas más parecidas en matiz, formando un degradado continuo sin saltos bruscos.
+            </p>
+            <p class="prose" style="margin-top:12px;">
+              En nuestra versión digital renovada podés elegir entre el <strong>Modo Rápido de 15 fichas (ideal para niños y diagnóstico ágil)</strong> o el <strong>Modo Completo de 85 fichas por bandejas</strong>, tanto con mouse como tocando en pantalla desde el celular.
+            </p>
+          </div>
+          <img src="img/fansworthej.jpg" alt="Ejemplo de ordenamiento del Test de Farnsworth" style="border-radius:12px; width:100%; max-width:440px; margin-inline:auto;" />
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <h4>DaltoVisto</h4>
+            <p style="color:var(--text-on-dark-muted); font-size:0.9375rem;">Proyecto estudiantil argentino sobre daltonismo y salud visual.</p>
+          </div>
+          <div>
+            <h4>Herramientas</h4>
+            <ul class="footer-list">
+              <li><a href="test.html">Test de Ishihara</a></li>
+              <li><a href="newtest.html">Test de Farnsworth</a></li>
+              <li><a href="simulador.html">Simulador en Vivo</a></li>
+              <li><a href="miopia.html">Guía sobre Miopía</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Equipo y Docente</h4>
+            <ul class="footer-list">
+              <li>Juan Irigoyen</li>
+              <li>Agustina Esteban</li>
+              <li>Bruno Sestúa</li>
+              <li>Profesor: Andrés Obregón</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Redes sociales</h4>
+            <ul class="footer-list">
+              <li><a href="https://daltovisto.com.ar" target="_blank" rel="noopener noreferrer">Web: daltovisto.com.ar</a></li>
+              <li><a href="https://www.instagram.com/daltovisto/" target="_blank" rel="noopener noreferrer">Instagram: @daltovisto</a></li>
+              <li><a href="https://www.tiktok.com/@daltovisto" target="_blank" rel="noopener noreferrer">TikTok: @daltovisto</a></li>
+              <li><a href="https://www.youtube.com/@Daltovisto" target="_blank" rel="noopener noreferrer">YouTube: DaltoVisto</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>&copy; 2023–2026 DaltoVisto</span>
+          <span>Orientación visual educativa · No reemplaza diagnóstico médico.</span>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="js/common.js"></script>
+  </body>
+</html>

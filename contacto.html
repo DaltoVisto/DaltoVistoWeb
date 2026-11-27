@@ -1,97 +1,178 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<title>Dalto Visto Contacto</title>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" type="text/css" href="css/contacto.css">
-		<link rel="shortcut icon" type="image/x-icon" href="img/logo.png">
-		<meta property="og:image" content="http://daltovisto.com.ar">
-		<meta property="og:author" content="Agustina Esteban, Bruno Sestúa y Juan Irigoyen">
-		<meta name="keyboard" content="daltonismo, vista, vision, daltovisto, dislexia, ishihara, John Dalton, ojo, ocular, emfermedad, test de daltonismo">
-		<!-- Google tag (gtag.js) -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=G-7GC3DGMSS0"></script>
-		<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto y Comunidad · DaltoVisto</title>
+    <meta name="description" content="Comunicate con el equipo de DaltoVisto mediante nuestro formulario o seguinos en Instagram, TikTok y YouTube." />
+    <link rel="shortcut icon" type="image/x-icon" href="img/logo.png" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7GC3DGMSS0"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+      gtag('config', 'G-7GC3DGMSS0');
+    </script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="index.html" class="brand-link">
+          <img src="img/logo.png" alt="DaltoVisto" class="brand-logo" width="38" height="38" />
+          <span>DaltoVisto</span>
+        </a>
+        <nav class="nav-links" aria-label="Navegación principal">
+          <a href="index.html" class="nav-link">Inicio</a>
+          <a href="test.html" class="nav-link">Test de Visión</a>
+          <a href="simulador.html" class="nav-link">Simulador</a>
+          <a href="info.html" class="nav-link">Más info</a>
+          <a href="contacto.html" class="nav-link">Contacto</a>
+        </nav>
+        <div class="header-actions">
+          <a href="test.html" class="btn btn-primary btn-sm header-cta">Hacer el Test</a>
+          <button type="button" id="mobile-menu-toggle" class="mobile-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-drawer">☰</button>
+        </div>
+      </div>
+      <div id="mobile-drawer" class="mobile-drawer">
+        <div class="mobile-drawer-links">
+          <a href="index.html">Inicio</a>
+          <a href="test.html">Test de Visión (Ishihara)</a>
+          <a href="newtest.html">Test de Farnsworth</a>
+          <a href="simulador.html">Simulador de Daltonismo</a>
+          <a href="info.html">Más info y Genética</a>
+          <a href="miopia.html">Salud Visual y Miopía</a>
+          <a href="contacto.html">Contacto</a>
+        </div>
+      </div>
+    </header>
 
-		gtag('config', 'G-7GC3DGMSS0');
-		</script>
-		<body>
-		<!--COMIENZA EL HEADER-->
-		<header>
-			<!--BARRA DE NAVEGACION-->
-			<nav>
-				<a href="index.html"><img src="img/logo.png" width="70px"></a>
-				<a href="index.html" class="linkheader">Inicio</a>
-				<a href="contacto.html" class="linkheader">Contacto</a>
-				<a href="info.html" class="linkheader">Más info</a>
+    <section class="page-banner">
+      <div class="container">
+        <div class="breadcrumb">
+          <a href="index.html">Inicio</a>
+          <span aria-hidden="true">/</span>
+          <span>Contacto</span>
+        </div>
+        <h1>¿Necesitás ayuda o querés escribirnos?</h1>
+        <p>Contactate con el equipo de DaltoVisto por consultas escolares, sugerencias o difusión a través del formulario o nuestras redes oficiales.</p>
+      </div>
+    </section>
 
-			</nav>
-			<!--IMAGEN DE FONDO-->
-			<h1 class="textos-header">Daltonismo</h1>
-		</section>
-		<!--WAVE-->
-				<div class="wave" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #ffffff;"></path></svg></div>
-		<section class="section_img">
-		</header>
-		<!--CIERRA EL HEADER-->
-		<main>
-				<h1>¿Necesitas Ayuda?</h1>
-				<h2>Contactate con nosotros mediantes este formulario o por nuestra pagina de Instagram.</h2>
+    <main class="section section-muted">
+      <div class="container grid-2">
+        <!-- Formulario validado con nombres reales para Formspree -->
+        <div class="card">
+          <span class="kicker">Mensaje directo</span>
+          <h2>Envianos tu consulta</h2>
 
-				
-			<form action="https://formspree.io/f/mbjbjlvw" method="post">
-				<label >Nombre:</label>
-				<input type="" name="" id="inputname" required>
-				<label>Apellido:</label>
-				<input type="" name="" id="inputapellido" required>
-				<label>Num.Telefono:</label>
-				<input type="number" name="" id="inputtel" required>
-				<label>Mail:</label>
-				<input type="email" name="" id="inputmail" required>
-				<label>Mensaje:</label>
-				<input type="" name="" id="inputmensaje" required>
-				<button class="botonform">Enviar</button>
-			</form>
-		<section>
-			<div>
-				<h2>¡Seguinos en instagram!</h2>
-				<button class="ig"><a href="https://www.instagram.com/daltovisto/" target="_blank"><img src="img/DaltoVisto.png" width="700" class="imginsta"></a></button>
-			</div>
-			<div>
-				<h2>¡Mira nuestro video en youtube!</h2>
-				<iframe src="https://www.youtube.com/embed/UHcp-1KSTsQ"></iframe>
-			</div>
-		</section>
-		</main>
-		<footer>
-			<!--FOOTER-->
-			<div class="contenedor-footer">
-				<div class="content-foo">
-					<h4>Owners:</h4>
-					<p>Juan Irigoyen</p>
-					<p>Agustina Esteban</p>
-					<p>Bruno Sestúa</p>
-				</div>
-				<div class="content-foo">
-					<h4>Redes sociales:</h4>
-					<p>Google: daltovisto.com.ar</p>
-					<p>Instagram: daltovisto</p>
-					<p>Tiktok: daltovisto</p>
-					<p>Youtube: Daltovisto</p>
-				</div>
-				<div class="content-foo">
-					<h4>Profesor:</h4>
-					<p>Andrés Obregón</p>
-				</div>
-			</div> 
-			<h2 class="titulo-final">&copy; Daltovisto2023 </h2>
-		</footer>
-		<a href="https://www.instagram.com/daltovisto/" target="_blank"><img src="img/Instagram.jpg" class="logowhats"></a>
-		<script type="text/javascript" src="js/contacto.js"></script>
-	</body>
+          <form id="contact-form" action="https://formspree.io/f/mbjbjlvw" method="POST" class="form-grid" novalidate>
+            <div class="form-row-2">
+              <div class="field">
+                <label for="inputname">Nombre</label>
+                <input type="text" name="nombre" id="inputname" placeholder="Tu nombre" required />
+              </div>
+              <div class="field">
+                <label for="inputapellido">Apellido</label>
+                <input type="text" name="apellido" id="inputapellido" placeholder="Tu apellido" required />
+              </div>
+            </div>
 
+            <div class="form-row-2">
+              <div class="field">
+                <label for="inputtel">Teléfono (opcional)</label>
+                <input type="tel" name="telefono" id="inputtel" placeholder="+54 9 11..." />
+              </div>
+              <div class="field">
+                <label for="inputmail">Correo electrónico</label>
+                <input type="email" name="email" id="inputmail" placeholder="nombre@ejemplo.com" required />
+              </div>
+            </div>
 
+            <div class="field">
+              <label for="inputmensaje">Mensaje</label>
+              <textarea name="mensaje" id="inputmensaje" placeholder="Contanos en qué te podemos ayudar..." required></textarea>
+            </div>
+
+            <button type="submit" id="contact-submit-btn" class="btn btn-primary">Enviar mensaje</button>
+            <div id="contact-feedback" class="notice-box" hidden></div>
+          </form>
+        </div>
+
+        <!-- Redes y Video -->
+        <div style="display:grid; gap:24px;">
+          <div class="card">
+            <span class="kicker">Comunidad DaltoVisto</span>
+            <h2>Seguinos en redes oficiales</h2>
+            <p>Compartimos material educativo, charlas estudiantiles y pruebas visuales en nuestras plataformas.</p>
+            <div style="display:flex; flex-wrap:wrap; gap:10px; margin-top:8px;">
+              <a href="https://www.instagram.com/daltovisto/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">Instagram @daltovisto</a>
+              <a href="https://www.tiktok.com/@daltovisto" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">TikTok @daltovisto</a>
+              <a href="https://www.youtube.com/@Daltovisto" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">YouTube DaltoVisto</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <span class="kicker">Historia del proyecto</span>
+            <h3>¡Somos DaltoVisto!</h3>
+            <p style="font-size:0.9375rem;">Mirá nuestro video de presentación sobre cómo surgió la idea y por qué concientizamos sobre el daltonismo.</p>
+            <div class="video-frame" style="margin-top:8px;">
+              <iframe
+                src="https://www.youtube.com/embed/UHcp-1KSTsQ"
+                title="Video de presentación ¡Somos DaltoVisto!"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+                loading="lazy"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <h4>DaltoVisto</h4>
+            <p style="color:var(--text-on-dark-muted); font-size:0.9375rem;">Proyecto estudiantil argentino sobre daltonismo y salud visual.</p>
+          </div>
+          <div>
+            <h4>Herramientas</h4>
+            <ul class="footer-list">
+              <li><a href="test.html">Test de Ishihara</a></li>
+              <li><a href="newtest.html">Test de Farnsworth</a></li>
+              <li><a href="simulador.html">Simulador en Vivo</a></li>
+              <li><a href="miopia.html">Guía sobre Miopía</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Equipo y Docente</h4>
+            <ul class="footer-list">
+              <li>Juan Irigoyen</li>
+              <li>Agustina Esteban</li>
+              <li>Bruno Sestúa</li>
+              <li>Profesor: Andrés Obregón</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Redes sociales</h4>
+            <ul class="footer-list">
+              <li><a href="https://daltovisto.com.ar" target="_blank" rel="noopener noreferrer">Web: daltovisto.com.ar</a></li>
+              <li><a href="https://www.instagram.com/daltovisto/" target="_blank" rel="noopener noreferrer">Instagram: @daltovisto</a></li>
+              <li><a href="https://www.tiktok.com/@daltovisto" target="_blank" rel="noopener noreferrer">TikTok: @daltovisto</a></li>
+              <li><a href="https://www.youtube.com/@Daltovisto" target="_blank" rel="noopener noreferrer">YouTube: DaltoVisto</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>&copy; 2023–2026 DaltoVisto</span>
+          <span>Proyecto educativo · Colegio Mano Amiga.</span>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="js/common.js"></script>
+    <script type="module" src="js/contacto.js"></script>
+  </body>
 </html>

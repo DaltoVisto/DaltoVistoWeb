@@ -1,117 +1,169 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<title>Anteojos de daltonismo</title>
-		<meta charset="utf-8">
-		<meta name="description" content="Daltovisto es un proyecto que busca concientizar y detectar el daltonismo">
-		<meta name="keyboard" content="daltonismo, vista, vision, daltovisto, dislexia, ishihara, John Dalton, ojo, ocular, emfermedad, test de daltonismo">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" type="text/css" href="css/estilo-prueba.css">
-		<link rel="shortcut icon" type="image/x-icon" href="img/logo.png">
-		<meta property="og:title" content="Daltovisto-sitio web sobre daltonismo">
-		<meta property="og:image" content="http://daltovisto.com.ar">
-		<meta property="og:author" content="Agustina Esteban, Bruno Sestúa y Juan Irigoyen">
-		<!-- Google tag (gtag.js) -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=G-7GC3DGMSS0"></script>
-		<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anteojos para Daltónicos · DaltoVisto</title>
+    <meta name="description" content="Cómo funcionan los anteojos con filtros espectrales para daltonismo, en qué casos ayudan y qué expectativas reales tener." />
+    <link rel="shortcut icon" type="image/x-icon" href="img/logo.png" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7GC3DGMSS0"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+      gtag('config', 'G-7GC3DGMSS0');
+    </script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="index.html" class="brand-link">
+          <img src="img/logo.png" alt="DaltoVisto" class="brand-logo" width="38" height="38" />
+          <span>DaltoVisto</span>
+        </a>
+        <nav class="nav-links" aria-label="Navegación principal">
+          <a href="index.html" class="nav-link">Inicio</a>
+          <a href="test.html" class="nav-link">Test de Visión</a>
+          <a href="simulador.html" class="nav-link">Simulador</a>
+          <a href="info.html" class="nav-link">Más info</a>
+          <a href="contacto.html" class="nav-link">Contacto</a>
+        </nav>
+        <div class="header-actions">
+          <a href="test.html" class="btn btn-primary btn-sm header-cta">Hacer el Test</a>
+          <button type="button" id="mobile-menu-toggle" class="mobile-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-drawer">☰</button>
+        </div>
+      </div>
+      <div id="mobile-drawer" class="mobile-drawer">
+        <div class="mobile-drawer-links">
+          <a href="index.html">Inicio</a>
+          <a href="test.html">Test de Visión (Ishihara)</a>
+          <a href="newtest.html">Test de Farnsworth</a>
+          <a href="simulador.html">Simulador de Daltonismo</a>
+          <a href="info.html">Más info y Genética</a>
+          <a href="miopia.html">Salud Visual y Miopía</a>
+          <a href="contacto.html">Contacto</a>
+        </div>
+      </div>
+    </header>
 
-		gtag('config', 'G-7GC3DGMSS0');
-		</script>
-	</head>
-	<body>
-	<!--COMIENZA EL HEADER-->
-	<header class="header-anteojos">
-		<div class="boxlogo">
-			
-		</div>
-		<!--BARRA DE NAVEGACION-->
-		<nav>
-			<a href="index.html"><img src="img/logo.png" width="70px"></a>
-			<a href="index.html" class="linkheader">Inicio</a>
-			<a href="contacto.html" class="linkheader">Contacto</a>
-			<a href="info.html" class="linkheader">Más info</a>
+    <section class="page-banner">
+      <div class="container">
+        <div class="breadcrumb">
+          <a href="index.html">Inicio</a>
+          <span aria-hidden="true">/</span>
+          <span>Anteojos para daltónicos</span>
+        </div>
+        <h1>Anteojos con filtros para daltonismo</h1>
+        <p>Qué hacen realmente estas lentes especiales, por qué no "curan" la retina y qué puntos considerar antes de adquirirlas.</p>
+      </div>
+    </section>
 
-		</nav>
-		<!--IMAGEN DE FONDO-->
-		<h1 class="textos-header-ishihara">Anteojos para el daltonismo</h1>
-	</section>
-	<!--WAVE-->
-			<div class="wave" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #ffffff;"></path></svg></div>
-	<section class="section_img">
-	</header>
-	<!--CIERRA EL HEADER-->
-	<!--INICIA MAIN-->
-			<!--ILUSTRACION-->
-		<section class="productos">
-				<h2 class="titulo">Anteojos para daltónicos</h2>
-			<section class="contenedor-sobre-nosotros">	
-				<div>
-				<img class="img-about-us" src="img/pruebaanteojos.png" width="450px" class="imagen">
-				</div>
-				<div class="contenido-texto-pro">
-					<h3 class="h3titulo">El daltonismo heredado</h3>
-					<br>
-					<h3>No tiene cura hasta el momento. Sin embargo, para algunos con formas leves de daltonismo que confunden el rojo con el verde, las gafas para daltonismo especialmente formuladas podrían mejorar el contraste entre algunos colores. Los resultados varían según el tipo y grado de daltonismo de la persona.</h3>
-				</div>
-				<div class="contenido-texto-pro">
-					<h3 class="h3titulo">¿Se puede corregir el daltonismo con gafas?</h3>
-					<br>
-					<h3>-El Dr. Ivan Schwab, profesor de oftalmología de la Universidad de California, en Davis, explica que las gafas cambian lo que ven las personas que los usan, mejorando así la diferenciación entre el rojo y el verde. No obstante, la experiencia puede variar ampliamente de una persona a otra y las gafas correctoras de daltonismo no ofrecen un verdadero equivalente de la visión de color natural.
+    <main>
+      <section class="section">
+        <div class="container split-feature">
+          <img src="img/pruebaanteojos.png" alt="Lentes ópticas para daltonismo" style="border-radius:12px; max-width:400px; width:100%; margin-inline:auto;" />
+          <div>
+            <span class="kicker">Expectativas reales</span>
+            <h2>¿Se puede corregir el daltonismo con gafas?</h2>
+            <p class="prose" style="margin-top:12px;">
+              El daltonismo hereditario no tiene cura genética hasta el momento. Sin embargo, en personas con formas leves o moderadas (como deuteranomalía o protanomalía), ciertos lentes con filtros espectrales específicos pueden aumentar el contraste entre el rojo y el verde.
+            </p>
+            <p class="prose" style="margin-top:12px;">
+              Estas lentes bloquean una banda estrecha de longitudes de onda donde se superponen las señales de los conos verdes y rojos, enviando al cerebro una separación más marcada mientras las tenés puestas.
+            </p>
+          </div>
+        </div>
+      </section>
 
-						-El daltonismo genético es producido por una ausencia o un problema de la función de uno o más de los tres tipos de conos fotorreceptores sensibles al color en la retina. Quienes tienen dificultad para diferenciar la luz verde (deuteranomalía) o la luz roja (protanomalía) experimentan una superposición entre algunas longitudes de onda de luz que el cerebro interpreta como rojo o verde.
-						
-						-Según explica el Dr. Schwab, profesor de oftalmología de la Universidad de California, en Davis, "Las gafas para daltonismo están fabricadas con ciertos minerales que absorben y filtran algunas de las longitudes de onda entre el verde y el rojo que podrían confundir al cerebro".
-						
-						-Según el Dr. Schwab, parte de la luz que pasa a través de las gafas queda bloqueada de manera que las longitudes de onda de la luz roja y verde ya no se superponen en la misma medida. Co menos superposición de color, el cerebro tiene una señal más clara que ayuda a diferenciar entre estos colores. Uno de los tipos más populares de estas gafas es fabricado por EnChroma.
-						
-						-Las gafas para corrección de color no cambian la percepción de color para aquellos cuya deficiencia se debe a una ausencia total de fotorreceptores rojos o verdes. Y el efecto positivo de las gafas sólo se obtiene mientras se estén usando. Las gafas no modifican de forma alguna los fotorreceptores de una persona, sus nervios ópticos ni su contexto visual para fijar el color.
-						
-						-"La percepción de color requiere una serie completa de funciones óptimas, y las gafas no reemplazan ni reparan los mecanismos faltantes o dañados", sostiene el Dr. Schwab.</h3>
-					</div>
-				<div>
-					<img class="img-about-us" src="img/lenteanteojo.png" width= "550px" class="imagen">
-				</div>
-				<div>
-					<img class="img-about-us" src="img/lentes2.png" width="450px" class="imagen">
-					</div>
-					<div class="contenido-texto-pro">
-						<h3 class="h3titulo">Tres cosas que debe saber antes de comprar gafas para daltonismo:</h3>
-						<br>
-						<h3>-Las gafas para daltonismo pueden empeorar la visión nocturna. Debido a que estas gafas reducen la cantidad de luz que entra al ojo, puede no ser buena idea utilizarlas en la noche. Al reducir la cantidad de luz que entra al ojo, quienes tienen otras afecciones como cataratas o degeneración macular pueden tener problemas. El fabricante, EnChroma, advierte que no conviene utilizar estas gafas para conducir. La compañía ofrece una colección de gafas para utilizar en interiores que bloquea una menor cantidad de luz para lugares donde las condiciones de iluminación son más bajas.</h3>
-						<br>
-						<h3>-Estas gafas son costosas y es posible que no le brinden la experiencia que espera. Estas gafas pueden ser un lujo para muchas personas porque pueden costar muy caro. Es importante que se tengan expectativas reales acerca de lo que pueden o no pueden ofrecer estas gafas antes de comprarlas. Por lo general, las gafas correctoras de daltonismo no tienen cobertura de seguro porque el daltonismo no es algo que no afecte la salud de la persona, por lo que su tratamiento no es una necesidad médica.</h3> 
-						<br>
-						<h3>-Las gafas que realzan el contraste no son lo mismo que las gafas para daltonismo: Hay otros dispositivos diseñados para mejorar el contraste de color, como las gafas para cacería y los filtros que incrementan el contraste para fotografía, que pueden ayudar a algunas personas. Sin embargo, los productos diferentes a los dispositivos correctores de daltonismo como las gafas de EnChroma no fueron específicamente diseñados para los daltónicos.</h3>
-					</div>
-			</section>
-		</section>	
-		<!--FOOTER-->
-		<footer>
-		
-			<div class="contenedor-footer">
-				<div class="content-foo">
-					<h4>Owners:</h4>
-					<p>Juan Irigoyen</p>
-					<p>Agustina Esteban</p>
-					<p>Bruno Sestúa</p>
-				</div>
-				<div class="content-foo">
-					<h4>Redes sociales:</h4>
-					<p>Google: daltovisto.com.ar</p>
-					<p>Instagram: daltovisto</p>
-					<p>Tiktok: daltovisto</p>
-					<p>Youtube: Daltovisto</p>
-				</div>
-				<div class="content-foo">
-					<h4>Profesor:</h4>
-					<p>Andrés Obregón</p>
-				</div>
-			</div> 
-			<h2 class="titulo-final">&copy; Daltovisto2023 </h2>
-		</footer>
-		<a href="https://www.instagram.com/daltovisto/" target="_blank"><img src="img/Instagram.jpg" class="logowhats"></a>
-	</body>
+      <section class="section section-muted">
+        <div class="container split-feature">
+          <div>
+            <span class="kicker">Base científica</span>
+            <h2>Límites de los filtros ópticos</h2>
+            <p class="prose" style="margin-top:12px;">
+              Como explica el Dr. Ivan Schwab (Universidad de California en Davis), los anteojos filtran parte de la luz para reducir la superposición entre verde y rojo, pero <strong>no crean receptores nuevos</strong> ni devuelven una visión tricromática idéntica a la normal.
+            </p>
+            <p class="prose" style="margin-top:12px;">
+              Si existe ausencia total de conos rojos o verdes, el efecto suele ser muy limitado, y al retirar las gafas la percepción vuelve inmediatamente a su estado basal.
+            </p>
+          </div>
+          <img src="img/lenteanteojo.png" alt="Diagrama de filtro óptico en anteojos" style="border-radius:12px; max-width:460px; width:100%; margin-inline:auto;" />
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-header">
+            <span class="kicker">Antes de decidir</span>
+            <h2>Tres cosas importantes que conviene saber</h2>
+          </div>
+
+          <div class="grid-3">
+            <article class="card">
+              <h3>01. Reducen la luz nocturna</h3>
+              <p>Al absorber ciertas longitudes de onda, entra menos luz al ojo. No se recomienda usarlas de noche ni para conducir en baja iluminación salvo modelos específicos de interior avalados por un especialista.</p>
+            </article>
+            <article class="card">
+              <h3>02. Costo y cobertura</h3>
+              <p>Suelen tener un valor elevado y por lo general no cuentan con cobertura médica obligatoria, por lo que conviene probar primero con asesoramiento profesional y expectativas realistas.</p>
+            </article>
+            <article class="card">
+              <h3>03. No equivalen a gafas comunes de contraste</h3>
+              <p>Las gafas de sol ámbar o para deportes aumentan contraste general, pero no poseen los filtros de muesca diseñados específicamente para separar la confusión rojo-verde.</p>
+            </article>
+          </div>
+
+          <div style="margin-top:28px; display:flex; flex-wrap:wrap; gap:12px;">
+            <a href="test.html" class="btn btn-primary">Evaluá tu visión con el Test</a>
+            <a href="simulador.html" class="btn btn-secondary">Probar Simulador en Vivo</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <h4>DaltoVisto</h4>
+            <p style="color:var(--text-on-dark-muted); font-size:0.9375rem;">Proyecto estudiantil argentino sobre daltonismo y salud visual.</p>
+          </div>
+          <div>
+            <h4>Herramientas</h4>
+            <ul class="footer-list">
+              <li><a href="test.html">Test de Ishihara</a></li>
+              <li><a href="newtest.html">Test de Farnsworth</a></li>
+              <li><a href="simulador.html">Simulador en Vivo</a></li>
+              <li><a href="miopia.html">Guía sobre Miopía</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Equipo y Docente</h4>
+            <ul class="footer-list">
+              <li>Juan Irigoyen</li>
+              <li>Agustina Esteban</li>
+              <li>Bruno Sestúa</li>
+              <li>Profesor: Andrés Obregón</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Redes sociales</h4>
+            <ul class="footer-list">
+              <li><a href="https://daltovisto.com.ar" target="_blank" rel="noopener noreferrer">Web: daltovisto.com.ar</a></li>
+              <li><a href="https://www.instagram.com/daltovisto/" target="_blank" rel="noopener noreferrer">Instagram: @daltovisto</a></li>
+              <li><a href="https://www.tiktok.com/@daltovisto" target="_blank" rel="noopener noreferrer">TikTok: @daltovisto</a></li>
+              <li><a href="https://www.youtube.com/@Daltovisto" target="_blank" rel="noopener noreferrer">YouTube: DaltoVisto</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>&copy; 2023–2026 DaltoVisto</span>
+          <span>Contenido informativo · Consultá siempre con tu oftalmólogo.</span>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="js/common.js"></script>
+  </body>
 </html>

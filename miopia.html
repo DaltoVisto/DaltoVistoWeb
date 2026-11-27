@@ -1,115 +1,198 @@
-<!DOCTYPE html>
-<html>
-	<head>
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Miopía y Simulador de Enfoque · DaltoVisto</title>
+    <meta name="description" content="Conocé qué es la miopía, sus causas, síntomas, tipos y probá nuestro simulador interactivo de dioptrías para entender cómo se ve de lejos." />
+    <link rel="shortcut icon" type="image/x-icon" href="img/logo.png" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7GC3DGMSS0"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+      gtag('config', 'G-7GC3DGMSS0');
+    </script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="index.html" class="brand-link">
+          <img src="img/logo.png" alt="DaltoVisto" class="brand-logo" width="38" height="38" />
+          <span>DaltoVisto</span>
+        </a>
+        <nav class="nav-links" aria-label="Navegación principal">
+          <a href="index.html" class="nav-link">Inicio</a>
+          <a href="test.html" class="nav-link">Test de Visión</a>
+          <a href="simulador.html" class="nav-link">Simulador</a>
+          <a href="info.html" class="nav-link">Más info</a>
+          <a href="contacto.html" class="nav-link">Contacto</a>
+        </nav>
+        <div class="header-actions">
+          <a href="test.html" class="btn btn-primary btn-sm header-cta">Hacer el Test</a>
+          <button type="button" id="mobile-menu-toggle" class="mobile-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-drawer">☰</button>
+        </div>
+      </div>
+      <div id="mobile-drawer" class="mobile-drawer">
+        <div class="mobile-drawer-links">
+          <a href="index.html">Inicio</a>
+          <a href="test.html">Test de Visión (Ishihara)</a>
+          <a href="newtest.html">Test de Farnsworth</a>
+          <a href="simulador.html">Simulador de Daltonismo</a>
+          <a href="info.html">Más info y Genética</a>
+          <a href="miopia.html">Salud Visual y Miopía</a>
+          <a href="contacto.html">Contacto</a>
+        </div>
+      </div>
+    </header>
 
-		<title>Dalto Visto</title>
-		<meta charset="utf-8">
-		<meta name="description" content="Daltovisto es un proyecto que busca concientizar y detectar el daltonismo">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" type="text/css" href="css/estilomio.css">
-		<link rel="shortcut icon" type="image/x-icon" href="img/logo.png">
-		<meta property="og:title" content="Daltovisto-sitio web sobre daltonismo">
-		<meta property="og:image" content="http://daltovisto.com.ar">
-		<meta property="og:author" content="Agustina Esteban, Bruno Sestúa y Juan Irigoyen">
-		<meta name="keyboard" content="daltonismo, vista, vision, daltovisto, dislexia, ishihara, John Dalton, ojo, ocular, emfermedad, test de daltonismo">
-		<!-- Google tag (gtag.js) -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=G-7GC3DGMSS0"></script>
-		<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
+    <section class="page-banner">
+      <div class="container">
+        <div class="breadcrumb">
+          <a href="index.html">Inicio</a>
+          <span aria-hidden="true">/</span>
+          <span>Salud visual y Miopía</span>
+        </div>
+        <h1>Miopía: Qué es, Causas y Simulador de Dioptrías</h1>
+        <p>Una afección frecuente del enfoque ocular donde los objetos cercanos se ven nítidos y los lejanos se perciben borrosos.</p>
+      </div>
+    </section>
 
-		gtag('config', 'G-7GC3DGMSS0');
-		</script>
-	</head>
-	<body>
-		<header>
-			<div class="boxlogo">
-				<a href="index.html"><img src="img/logo.png" width="70px"></a>
-			</div>
-			<nav>
-				<ul class="ulheader">
-					<li class="listaheader">
-						<a href="index.html" class="linkheader">Inicio</a>
-					</li>
-					<li class="listaheader">
-						<a href="contacto.html" class="linkheader">Contacto</a>
-					</li>
-					<li class="listaheader">
-						<a href="info.html" class="linkheader">Más info</a>
-					</li>
-				</ul>
-			</nav>
-		</header>
-		<video src="img/headermio.mp4" autoplay="true" loop="true" muted="true"></video>
-		<div class="boxtituloinicio">	
-			<h1 class="h1Inicio">Miopía</h1>
-			<h2 class="hInicio">Propuestas para enseñanza y aprendizaje</h2>
-		</div>
-		
-		<section class="section_img">
-			<div class="boximg">
-				<h2 class="h2dalto">¿Qué es la miopía?</h2>
-				<p class="textimg">
-					La miopía es cuando los objetos cercanos se ven nítidos pero los objetos distantes se ven borrosos. Por ejemplo, aunque podrá leer un mapa claramente, tendría problemas para ver lo suficientemente bien como para conducir un auto.
-				</p>
-				<a href="test.html"><button class="boxtest">Test de Ishihara</button></a>
-			</div>
-			<div class="boximagen">
-				<img id="ojo1" src="img/miopia.jpg" class="imagen">
-			</div>
-		</section>
+    <main>
+      <!-- Qué es + Simulador de Dioptrías -->
+      <section class="section">
+        <div class="container sandbox-layout">
+          <div class="stage-panel">
+            <div style="padding:24px; background-color:var(--bg-canvas); border:1px solid var(--border-hairline); border-radius:8px; text-align:center;">
+              <div id="myopia-blur-target" style="transition: filter 120ms linear;">
+                <p class="mono" style="font-size:2.4rem; font-weight:700; letter-spacing:0.25em; color:#0f172a;">E</p>
+                <p class="mono" style="font-size:1.75rem; font-weight:700; letter-spacing:0.25em; color:#0f172a; margin-top:8px;">F P</p>
+                <p class="mono" style="font-size:1.35rem; font-weight:700; letter-spacing:0.25em; color:#0f172a; margin-top:8px;">T O Z</p>
+                <p class="mono" style="font-size:1.05rem; font-weight:700; letter-spacing:0.22em; color:#0f172a; margin-top:8px;">L P E D</p>
+                <p class="mono" style="font-size:0.85rem; font-weight:600; letter-spacing:0.2em; color:#334155; margin-top:8px;">P E C F D</p>
+                <p style="margin-top:16px; font-weight:700; color:#1d4ed8;">Cartel lejano: Próxima estación a 200 metros</p>
+              </div>
+            </div>
 
-		<main class="mainres">
+            <div style="margin-top:18px;">
+              <div style="display:flex; justify-content:space-between; align-items:center; gap:12px; margin-bottom:8px;">
+                <label for="myopia-diopter-slider" style="font-weight:700;">Simulá graduación en dioptrías:</label>
+                <span id="myopia-diopter-value" class="mono" style="font-weight:700; color:var(--accent-primary);">0.00 D</span>
+              </div>
+              <input id="myopia-diopter-slider" type="range" min="0" max="6" step="0.5" value="0" style="width:100%;" />
+              <p id="myopia-severity-label" style="margin-top:8px; font-weight:600; font-size:0.9375rem;"></p>
+            </div>
+          </div>
 
-			<div class="boxdiv">
-				<img src="img/miopiacau.png" width="200px">
-				<p class="textdiv1">
-					Las causas de la miopía</p>
-				<a href="causas.html" class="botonmain"><button>Ver más</button></a>
-			</div>
+          <div class="deck-panel">
+            <img src="img/miojo.png" alt="Diagrama del ojo con miopía" style="max-width:260px; margin-inline:auto;" />
+            <h3>¿Cómo se produce la miopía?</h3>
+            <p>
+              Se produce cuando la forma del globo ocular (ligeramente más alargado) o la curvatura de la córnea hacen que los rayos de luz se enfoquen <strong>delante de la retina</strong> en lugar de hacerlo directamente sobre ella.
+            </p>
+            <p>
+              A diferencia del daltonismo, la miopía sí puede corregirse ópticamente con anteojos, lentes de contacto o procedimientos médicos evaluados por un oftalmólogo.
+            </p>
+          </div>
+        </div>
+      </section>
 
-			<div class="boxdiv">
-				<img src="img/miopiaante.png" width="270px">
-				<p class="textdiv2">
-					Anteojos para personas con miopía
-				</p>
-				<a href="farnsworth.html" class="botonmain"><button>Ver más</button></a>
-			</div>
+      <!-- Causas y Síntomas -->
+      <section class="section section-muted">
+        <div class="container grid-2">
+          <article class="card">
+            <span class="card-kicker">Origen y factores</span>
+            <h3>Causas principales</h3>
+            <ul style="padding-left:20px; color:var(--text-secondary); display:grid; gap:10px; margin-top:6px;">
+              <li><strong>Genética:</strong> es frecuente cuando uno o ambos padres presentan este defecto refractivo.</li>
+              <li><strong>Hábitos visuales y ambiente:</strong> pasar muchas horas frente a pantallas cercanas con poca iluminación natural y escasa actividad al aire libre aumenta el riesgo en niños y jóvenes.</li>
+              <li><strong>Otras condiciones de salud:</strong> patologías como la diabetes o cambios en el cristalino pueden provocar miopía transitoria o progresiva.</li>
+            </ul>
+          </article>
 
-			<div class="boxdiv">
-				<img class="boximglentes" src="img/miopialas.png" width="170px">
-				<p class="textdiv3">
-					Laser para corregir miopía
-				</p>
-				<a href="anteojos.html" class="botonmain"><button class="botonlentes">Ver más</button></a>
-			</div>
-		</main>
-		<footer>
-			<div>
-				<a href="index.html"><img src="img/logo.png" width="200px"></a>
-			</div>
-			<div>
-				<ul class="ul1">
-					<li class="listafooter">
-						<a href="index.html" class="linkheader">Inicio</a>
-					</li>
-					<li class="listafooter">
-						<a href="contacto.html" class="linkheader">Contacto</a>
-					</li>
-					<li class="listafooter">
-						<a href="info.html" class="linkheader">Más info</a>
-					</li>
-				</ul>
-			
-			</div>
-			<div>
-				<p class="texfooter">Colegio Mano Amiga</p>
-				<p class="texfooter">Pf: Andres Obregon</p>
-				<p class="texfooter">Owners: Juan Irigoyen, Agustina Esteban y Bruno Sestua</p>
-			</div>
-		</footer>
-		<a href="https://www.instagram.com/daltovisto/" target="_blank"><img src="img/Instagram.jpg" class="logowhats"></a>
-		<script type="text/javascript" src="js/fuction.js"></script>
-	</body>
+          <article class="card">
+            <span class="card-kicker">Señales de alerta</span>
+            <h3>Síntomas y diagnóstico</h3>
+            <ul style="padding-left:20px; color:var(--text-secondary); display:grid; gap:10px; margin-top:6px;">
+              <li>Entrecerrar los ojos para intentar enfocar el pizarrón o carteles lejanos.</li>
+              <li>Acercarse demasiado a libros, cuadernos o pantallas.</li>
+              <li>Fatiga ocular y dolores de cabeza frecuentes al final del día.</li>
+              <li><strong>Control recomendado:</strong> realizar al menos una revisión anual con un médico oftalmólogo (agudeza visual, refracción y fondo de ojo).</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <!-- Tipos de Miopía -->
+      <section class="section">
+        <div class="container split-feature">
+          <img src="img/miopias.png" alt="Comparación de tipos de miopía" style="max-width:380px; width:100%; margin-inline:auto; border-radius:12px;" />
+          <div style="display:grid; gap:16px;">
+            <div>
+              <span class="kicker">Clasificación</span>
+              <h2>Tipos de miopía</h2>
+            </div>
+            <div class="card" style="padding:18px;">
+              <h3>Miopía simple</h3>
+              <p>Es la más habitual (menos de 6 dioptrías). Suele estabilizarse alrededor de los 18 a 20 años y se corrige fácilmente con anteojos o lentes de contacto.</p>
+            </div>
+            <div class="card" style="padding:18px;">
+              <h3>Miopía magna (alta)</h3>
+              <p>Supera las 6 dioptrías. Requiere seguimiento oftalmológico periódico porque conlleva mayor exigencia sobre la retina.</p>
+            </div>
+            <div class="card" style="padding:18px;">
+              <h3>Falsa miopía</h3>
+              <p>Bloqueo temporal del músculo de acomodación por esfuerzo visual sostenido (espasmo de acomodación); no es una miopía estructural permanente.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <h4>DaltoVisto</h4>
+            <p style="color:var(--text-on-dark-muted); font-size:0.9375rem;">Proyecto estudiantil argentino sobre daltonismo y salud visual.</p>
+          </div>
+          <div>
+            <h4>Herramientas</h4>
+            <ul class="footer-list">
+              <li><a href="test.html">Test de Ishihara</a></li>
+              <li><a href="newtest.html">Test de Farnsworth</a></li>
+              <li><a href="simulador.html">Simulador en Vivo</a></li>
+              <li><a href="miopia.html">Guía sobre Miopía</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Equipo y Docente</h4>
+            <ul class="footer-list">
+              <li>Juan Irigoyen</li>
+              <li>Agustina Esteban</li>
+              <li>Bruno Sestúa</li>
+              <li>Profesor: Andrés Obregón</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Redes sociales</h4>
+            <ul class="footer-list">
+              <li><a href="https://daltovisto.com.ar" target="_blank" rel="noopener noreferrer">Web: daltovisto.com.ar</a></li>
+              <li><a href="https://www.instagram.com/daltovisto/" target="_blank" rel="noopener noreferrer">Instagram: @daltovisto</a></li>
+              <li><a href="https://www.tiktok.com/@daltovisto" target="_blank" rel="noopener noreferrer">TikTok: @daltovisto</a></li>
+              <li><a href="https://www.youtube.com/@Daltovisto" target="_blank" rel="noopener noreferrer">YouTube: DaltoVisto</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>&copy; 2023–2026 DaltoVisto</span>
+          <span>Contenido informativo · Consultá siempre con un profesional de la visión.</span>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="js/common.js"></script>
+    <script type="module" src="js/miopia.js"></script>
+  </body>
 </html>
