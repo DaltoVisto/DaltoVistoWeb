@@ -1,123 +1,153 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<title>Test De Ishihara</title>
-		<meta charset="utf-8">
-		<meta name="description" content="Daltovisto es un proyecto que busca concientizar y detectar el daltonismo">
-		<meta name="keyboard" content="daltonismo, vista, vision, daltovisto, dislexia, ishihara, John Dalton, ojo, ocular, emfermedad, test de daltonismo">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" type="text/css" href="css/estilo-prueba.css">
-		<link rel="shortcut icon" type="image/x-icon" href="img/logo.png">
-		<meta property="og:title" content="Daltovisto-sitio web sobre daltonismo">
-		<meta property="og:image" content="http://daltovisto.com.ar">
-		<meta property="og:author" content="Agustina Esteban, Bruno Sestúa y Juan Irigoyen">
-	
-		<!-- Google tag (gtag.js) -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=G-7GC3DGMSS0"></script>
-		<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guía del Test de Ishihara · DaltoVisto</title>
+    <meta name="description" content="Aprendé qué es el Test de Ishihara, cómo funcionan las láminas pseudoisocromáticas y qué tipos de daltonismo detecta." />
+    <link rel="shortcut icon" type="image/x-icon" href="img/logo.png" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7GC3DGMSS0"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+      gtag('config', 'G-7GC3DGMSS0');
+    </script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="index.html" class="brand-link">
+          <img src="img/logo.png" alt="DaltoVisto" class="brand-logo" width="38" height="38" />
+          <span>DaltoVisto</span>
+        </a>
+        <nav class="nav-links" aria-label="Navegación principal">
+          <a href="index.html" class="nav-link">Inicio</a>
+          <a href="test.html" class="nav-link">Test de Visión</a>
+          <a href="simulador.html" class="nav-link">Simulador</a>
+          <a href="info.html" class="nav-link">Más info</a>
+          <a href="contacto.html" class="nav-link">Contacto</a>
+        </nav>
+        <div class="header-actions">
+          <a href="test.html" class="btn btn-primary btn-sm header-cta">Hacer el Test</a>
+          <button type="button" id="mobile-menu-toggle" class="mobile-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-drawer">☰</button>
+        </div>
+      </div>
+      <div id="mobile-drawer" class="mobile-drawer">
+        <div class="mobile-drawer-links">
+          <a href="index.html">Inicio</a>
+          <a href="test.html">Test de Visión (Ishihara)</a>
+          <a href="newtest.html">Test de Farnsworth</a>
+          <a href="simulador.html">Simulador de Daltonismo</a>
+          <a href="info.html">Más info y Genética</a>
+          <a href="miopia.html">Salud Visual y Miopía</a>
+          <a href="contacto.html">Contacto</a>
+        </div>
+      </div>
+    </header>
 
-		gtag('config', 'G-7GC3DGMSS0');
-		</script></head>
-	<body>
-	<!--COMIENZA EL HEADER-->
-	<header class="header-ishihara">
-		<div class="boxlogo">
-			
-		</div>
-		<!--BARRA DE NAVEGACION-->
-		<nav>
-			<a href="index.html"><img src="img/logo.png" width="70px"></a>
-			<a href="index.html" class="linkheader">Inicio</a>
-			<a href="contacto.html" class="linkheader">Contacto</a>
-			<a href="info.html" class="linkheader">Más info</a>
+    <section class="page-banner">
+      <div class="container">
+        <div class="breadcrumb">
+          <a href="index.html">Inicio</a>
+          <span aria-hidden="true">/</span>
+          <span>Test de Ishihara</span>
+        </div>
+        <h1>Test de Ishihara</h1>
+        <p>La prueba clínica más utilizada en el mundo desde 1917 para detectar alteraciones en el eje rojo-verde.</p>
+      </div>
+    </section>
 
-		</nav>
-		<!--IMAGEN DE FONDO-->
-		<h1 class="textos-header-ishihara">Test de Ishihara</h1>
-	</section>
-	<!--WAVE-->
-			<div class="wave" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #ffffff;"></path></svg></div>
-	<section class="section_img">
-	</header>
-	<!--CIERRA EL HEADER-->
-	<!--INICIA MAIN-->
-			<!--ILUSTRACION-->
-		<section class="productos">
-				<h2 class="titulo">Test de Ishihara</h2>
-			<section class="contenedor-sobre-nosotros">	
-				<div>
-				<img class="img-about-us" src="img/libro_test.png" width="450px" class="imagen">
-				</div>
-				<div class="contenido-texto-pro">
-					<h3 class="h3titulo">¿Qué es?</h3>
-					<br>
-					<h3>Este test fue inventado en la Universidad de Tokio por el doctor Shinobu Ishihara en 1917. Consta de 38 tarjetas compuestas por círculos con puntos de colores de tamaños aleatorios en su interior, estos puntos suelen formar números o laberintos.
+    <main>
+      <section class="section">
+        <div class="container split-feature">
+          <img src="img/libro_test.png" alt="Libro del Test de Ishihara" style="border-radius:12px; width:100%; max-width:440px; margin-inline:auto;" />
+          <div>
+            <span class="kicker">Historia y método</span>
+            <h2>¿Qué es y cómo se realiza?</h2>
+            <p class="prose" style="margin-top:12px;">
+              Inventado en la Universidad de Tokio por el doctor <strong>Shinobu Ishihara</strong> en 1917, el libro completo consta de 38 láminas formadas por círculos de distintos tamaños y matices que ocultan números o laberintos para niños.
+            </p>
+            <p class="prose" style="margin-top:12px;">
+              La primera lámina contiene el número <strong>12</strong>, que funciona como lámina de control visible tanto para visión normal como para personas con discromatopsias. En evaluación clínica se utiliza luz natural, una distancia aproximada de 75 cm y un tiempo breve (unos 3 segundos por lámina).
+            </p>
+            <div style="margin-top:20px; display:flex; flex-wrap:wrap; gap:12px;">
+              <a href="test.html" class="btn btn-primary">Hacer Test de Ishihara Online</a>
+              <a href="test.html?modo=ninos" class="btn btn-secondary">Versión para Niños (Figuras)</a>
+            </div>
+          </div>
+        </div>
+      </section>
 
-						La primera lámina de este test contiene el número 12, el cual es visible tanto para personas con una visión del color normal, como con discromatopsias. Ya que se utiliza como lámina de referencia. En personas con daltonismo, en el resto de las láminas verán solamente un número o ninguno.
-						
-						Para realizar este test hay que utilizar luz natural, evitando los reflejos. El paciente debe situarse a una distancia de 75cm. El test debe realizarse de forma monocular, es decir, tapándose el otro ojo. Y además se considera que el tiempo para resolver el número oculto de la lámina no debe superar los tres segundos.
-						El test está compuesto por 38 láminas, pero para diagnosticar el tipo de daltonismo no es necesario realizar todas las láminas. El diseño de cada una de ellas es diferente y nos diagnostica si estamos ante una discromatopsia leve o severa. Esta es una de las pruebas más utilizadas para diagnosticar y clasificar las alteraciones de la visión del color (discromatopsias), comúnmente conocidas como daltonismo.</h3>	
-				</div>
-				<div class="contenido-texto-pro">
-					<h3 class="h3titulo">¿Qué diagnostica?</h3>
-					<br>
-					<h3>El test de Ishihara, además de diagnosticar y clasificar el daltonismo, también se utiliza para conocer el estado del nervio óptico y sus fibras. Es importante en patologías inflamatorias o compresión del nervio en procesos tumorales.
+      <section class="section section-muted">
+        <div class="container split-feature">
+          <div>
+            <span class="kicker">Alcance clínico</span>
+            <h2>¿Qué diagnostica exactamente?</h2>
+            <p class="prose" style="margin-top:12px;">
+              El Test de Ishihara detecta con gran precisión alteraciones en el eje <strong>rojo-verde</strong> (conos rojos L y conos verdes M), tanto congénitas como adquiridas, y también ayuda en controles del nervio óptico.
+            </p>
+            <p class="prose" style="margin-top:12px;">
+              No está diseñado para discriminar por sí solo anomalías del eje azul-amarillo (Tritan), para las cuales se complementa con pruebas de ordenamiento cromático como el <strong>Test de Farnsworth</strong>.
+            </p>
+            <ul style="margin-top:16px; padding-left:20px; color:var(--text-secondary); display:grid; gap:8px;">
+              <li><strong>Protanopía (defecto protan):</strong> alteración o ausencia de conos sensibles al <strong>color rojo</strong>.</li>
+              <li><strong>Deuteranopía (defecto deutan):</strong> alteración o ausencia de conos sensibles al <strong>color verde</strong>.</li>
+              <li><strong>Tritanopía (defecto tritan):</strong> alteración o ausencia de conos sensibles al <strong>color azul</strong>.</li>
+              <li><strong>Acromatopsia:</strong> ausencia o disfunción general de conos (visión en escala de grises).</li>
+            </ul>
+          </div>
+          <div style="display:grid; gap:16px; justify-items:center;">
+            <img src="img/pruebaishihara.png" alt="Ejemplo de lámina Ishihara" style="max-width:300px; border-radius:12px;" />
+            <img src="img/tipos.jpg" alt="Tipos de daltonismo comparados" style="max-width:460px; width:100%; border-radius:12px;" />
+          </div>
+        </div>
+      </section>
+    </main>
 
-						Centrándonos en el tema del daltonismo o discromatopsia, el test de Ishihara diagnostica las alteraciones del color rojo-verde. Este test no discrimina las alteraciones del color azul-amarillo, aunque estas últimas son las más raras.
-						
-						Cuando hablamos de daltonismo rojo-verde, nos estamos refiriendo a las alteraciones de las células de la retina que se encargan de ver estos dos colores. Estas células son los conos, los cuales hay tres tipos. Conos para el color verde, conos para el color rojo y conos para el color azul. Para estudiar las anomalías de la visión del color azul existen otros test.
-						
-						Como el test de Ishihara solo diagnostica la alteración de los colores rojo-verde, a su vez estamos analizando que existe una alteración o ausencia de conos rojos y de conos verdes.
-						
-						El test de Ishihara diagnostica el daltonismo general, independientemente de que la discromatopsia sea congénita o adquirida.</h3>
-				</div>
-				<div>
-					<img class="img-about-us" src="img/pruebaishihara.png" width="350px" class="imagen">
-				</div>
-				<div>
-					<img class="img-about-us" src="img/tipos.jpg" width= "550px" class="imagen">
-					</div>
-					<div class="contenido-texto-pro">
-						<h3 class="h3titulo">La discromatopsia se clasifica en cuatro grupos: </h3>
-						<br>
-						<h3>Deuteranopia o defecto deutan:</h3>
-						<p> Alteración en la visión del color rojo. Si es total existe ausencia de conos rojos, si es parcial existe una anomalía en estas células.</p> 
-						<h3>Protanopia o defecto protan:</h3> 
-						<p>Alteración en la visión del color verde. Si es total existe ausencia de conos verdes, si es parcial existe una anomalía en estas células.</p> 
-						<h3>Tritanopia o defecto tritan:</h3>
-						<p> Alteración en la visión del color azul. Si es total existe una ausencia de conos azules, si es parcial existe una anomalía en estas células. Este defecto se diagnostica con otros test.</p>
-						<h3>Acromatopsia:</h3>
-						<p> Ceguera al color. Esto quiere decir que en la retina hay ausencia de conos.</p>	
-					</div>
-			</section>
-		</section>	
-		<!--FOOTER-->
-		<footer>
-		
-			<div class="contenedor-footer">
-				<div class="content-foo">
-					<h4>Owners:</h4>
-					<p>Juan Irigoyen</p>
-					<p>Agustina Esteban</p>
-					<p>Bruno Sestúa</p>
-				</div>
-				<div class="content-foo">
-					<h4>Redes sociales:</h4>
-					<p>Google: daltovisto.com.ar</p>
-					<p>Instagram: daltovisto</p>
-					<p>Tiktok: daltovisto</p>
-					<p>Youtube: Daltovisto</p>
-				</div>
-				<div class="content-foo">
-					<h4>Profesor:</h4>
-					<p>Andrés Obregón</p>
-				</div>
-			</div> 
-			<h2 class="titulo-final">&copy; Daltovisto2023 </h2>
-		</footer>
-		<a href="https://www.instagram.com/daltovisto/" target="_blank"><img src="img/Instagram.jpg" class="logowhats"></a>
-	</body>
-</html
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <h4>DaltoVisto</h4>
+            <p style="color:var(--text-on-dark-muted); font-size:0.9375rem;">Proyecto estudiantil argentino sobre daltonismo y salud visual.</p>
+          </div>
+          <div>
+            <h4>Herramientas</h4>
+            <ul class="footer-list">
+              <li><a href="test.html">Test de Ishihara</a></li>
+              <li><a href="newtest.html">Test de Farnsworth</a></li>
+              <li><a href="simulador.html">Simulador en Vivo</a></li>
+              <li><a href="miopia.html">Guía sobre Miopía</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Equipo y Docente</h4>
+            <ul class="footer-list">
+              <li>Juan Irigoyen</li>
+              <li>Agustina Esteban</li>
+              <li>Bruno Sestúa</li>
+              <li>Profesor: Andrés Obregón</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Redes sociales</h4>
+            <ul class="footer-list">
+              <li><a href="https://daltovisto.com.ar" target="_blank" rel="noopener noreferrer">Web: daltovisto.com.ar</a></li>
+              <li><a href="https://www.instagram.com/daltovisto/" target="_blank" rel="noopener noreferrer">Instagram: @daltovisto</a></li>
+              <li><a href="https://www.tiktok.com/@daltovisto" target="_blank" rel="noopener noreferrer">TikTok: @daltovisto</a></li>
+              <li><a href="https://www.youtube.com/@Daltovisto" target="_blank" rel="noopener noreferrer">YouTube: DaltoVisto</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>&copy; 2023–2026 DaltoVisto</span>
+          <span>Orientación visual educativa · No reemplaza diagnóstico médico.</span>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="js/common.js"></script>
+  </body>
+</html>

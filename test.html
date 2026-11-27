@@ -1,85 +1,201 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<title>Test De Ishihara</title>
-		<meta charset="utf-8">
-		<meta name="description" content="Daltovisto es un proyecto que busca concientizar y detectar el daltonismo">
-		<meta name="keyboard" content="daltonismo, vista, vision, daltovisto, dislexia, ishihara, John Dalton, ojo, ocular, emfermedad, test de daltonismo">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" type="text/css" href="css/estilo-prueba.css">
-		<link rel="shortcut icon" type="image/x-icon" href="img/logo.png">
-		<meta property="og:title" content="Daltovisto-sitio web sobre daltonismo">
-		<meta property="og:image" content="http://daltovisto.com.ar">
-		<meta property="og:author" content="Agustina Esteban, Bruno Sestúa y Juan Irigoyen">
-		<!-- Google tag (gtag.js) -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=G-7GC3DGMSS0"></script>
-		<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test de Visión (Adultos y Niños) · DaltoVisto</title>
+    <meta name="description" content="Realizá el Test de Ishihara online en Modo Adultos (números) o Modo Niños (figuras geométricas), con guía de calibración y diagnóstico orientativo." />
+    <link rel="shortcut icon" type="image/x-icon" href="img/logo.png" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7GC3DGMSS0"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+      gtag('config', 'G-7GC3DGMSS0');
+    </script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="index.html" class="brand-link">
+          <img src="img/logo.png" alt="DaltoVisto" class="brand-logo" width="38" height="38" />
+          <span>DaltoVisto</span>
+        </a>
+        <nav class="nav-links" aria-label="Navegación principal">
+          <a href="index.html" class="nav-link">Inicio</a>
+          <a href="test.html" class="nav-link">Test de Visión</a>
+          <a href="simulador.html" class="nav-link">Simulador</a>
+          <a href="info.html" class="nav-link">Más info</a>
+          <a href="contacto.html" class="nav-link">Contacto</a>
+        </nav>
+        <div class="header-actions">
+          <a href="simulador.html" class="btn btn-primary btn-sm header-cta">Abrir Simulador</a>
+          <button type="button" id="mobile-menu-toggle" class="mobile-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-drawer">☰</button>
+        </div>
+      </div>
+      <div id="mobile-drawer" class="mobile-drawer">
+        <div class="mobile-drawer-links">
+          <a href="index.html">Inicio</a>
+          <a href="test.html">Test de Visión (Ishihara)</a>
+          <a href="newtest.html">Test de Farnsworth</a>
+          <a href="simulador.html">Simulador de Daltonismo</a>
+          <a href="info.html">Más info y Genética</a>
+          <a href="miopia.html">Salud Visual y Miopía</a>
+          <a href="contacto.html">Contacto</a>
+        </div>
+      </div>
+    </header>
 
-		gtag('config', 'G-7GC3DGMSS0');
-		</script>
-	</head>
-	<body>
-	<!--COMIENZA EL HEADER-->
-	<header class="header-test">
-		<!--BARRA DE NAVEGACION-->
-		<nav class="navtest">
-			<a href="index.html"><img src="img/logo.png" width="70px"></a>
-			<a href="index.html" class="linkheader">Inicio</a>
-			<a href="contacto.html" class="linkheader">Contacto</a>
-			<a href="info.html" class="linkheader">Más info</a>
+    <section class="page-banner">
+      <div class="container">
+        <div class="breadcrumb">
+          <a href="index.html">Inicio</a>
+          <span aria-hidden="true">/</span>
+          <span>Test de Ishihara</span>
+        </div>
+        <h1>Test de Visión del Color (Ishihara 2.0)</h1>
+        <p>Elegí entre el modo clásico con números o el modo infantil con figuras simples. Al finalizar verás un desglose claro lámina por lámina.</p>
+      </div>
+    </section>
 
-		</nav>
-		</header>
-		<main class="boxjugar">
-			<br>
-			<p>Número de preguntas:</p>
-			<br>
-			<p id="npregunta"></p>
-			<p>¿Que número distinguís?</p>
-			<img id="imgpregunta" src="img/test1.jpg" width="200" height="200">
-			<p id="textocorrecto"></p>
-			<p>Respuestas correctas:</p>
-			<p id="contadorcorrecta">0</p>
-			
+    <main class="section section-muted">
+      <div class="container">
+        <!-- Paso 1: Configuración y Calibración -->
+        <div id="test-setup-view" class="test-card">
+          <span class="kicker">Paso previo · Calibración y modo</span>
+          <h2>Prepará tu pantalla antes de empezar</h2>
+          <p style="margin-top:8px;">
+            Las pantallas con brillo bajo o filtros cálidos alteran los resultados. Verificá estas condiciones para obtener una orientación más fiel:
+          </p>
 
-			<button id="btn1" onclick="bien(id)"  class="botones">8</button>
-			<button id="btn2"  onclick="bien(id)" class="botones">12</button>
-			<button id="btn3" onclick="bien(id)"  class="botones">24</button>
-			<button id="btn4" onclick="bien(id)"  class="botones">No distingo ningún número</button>
-			<button id="btn5" onclick="bien(id)"  class="botones">Ninguno de los anteriores</button>
-			<button  id="btnsiguiente" class="botonsiguiente" onclick="campregunta()">Siguiente pregunta</button>
-			<br>
+          <div class="checklist">
+            <label class="checklist-item">
+              <input type="checkbox" checked />
+              <span>Subí el brillo de tu pantalla al <strong>80% – 100%</strong>.</span>
+            </label>
+            <label class="checklist-item">
+              <input type="checkbox" checked />
+              <span>Desactivá <strong>Luz Nocturna / Night Shift / True Tone</strong> o filtros de lectura.</span>
+            </label>
+            <label class="checklist-item">
+              <input type="checkbox" checked />
+              <span>Si usás anteojos de sol o lentes con filtro de color, retiralos (podés dejar tus lentes graduados comunes).</span>
+            </label>
+          </div>
 
-			<button class="botonsiguiente" id="btnres" onclick="resultados()">Ver resultados</button>
-		</main>
-		<script type="text/javascript" src="js/fuction.js" ></script>
-<!--FOOTER-->
-		<footer>
-			<div class="contenedor-footer">
-				<div class="content-foo">
-					<h4>Owners:</h4>
-					<p>Juan Irigoyen</p>
-					<p>Agustina Esteban</p>
-					<p>Bruno Sestúa</p>
-				</div>
-				<div class="content-foo">
-					<h4>Redes sociales:</h4>
-					<p>Google: daltovisto.com.ar</p>
-					<p>Instagram: daltovisto</p>
-					<p>Tiktok: daltovisto</p>
-					<p>Youtube: Daltovisto</p>
-				</div>
-				<div class="content-foo">
-					<h4>Profesor:</h4>
-					<p>Andrés Obregón</p>
-				</div>
-			</div> 
-			<h2 class="titulo-final">&copy; Daltovisto2023 </h2>
-		</footer>
-		<a href="https://www.instagram.com/daltovisto/" target="_blank"><img src="img/Instagram.jpg" class="logowhats"></a>
-		<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-	</body>
+          <div style="margin-top:24px;">
+            <p style="font-weight:700; margin-bottom:10px; color:var(--text-primary);">Elegí el tipo de prueba:</p>
+            <div class="segmented" role="group" aria-label="Modo del test">
+              <button type="button" data-test-mode="adult" class="is-active" aria-pressed="true">Modo Adultos y Jóvenes (8 láminas · Números)</button>
+              <button type="button" data-test-mode="kids" aria-pressed="false">Modo Niños (6 láminas · Figuras)</button>
+            </div>
+          </div>
+
+          <label class="checklist-item" style="margin-top:16px;">
+            <input type="checkbox" id="enable-timer-toggle" />
+            <span>Activar guía visual de <strong>5 segundos por lámina</strong> (recomendado para respuesta instintiva en adultos).</span>
+          </label>
+
+          <div style="margin-top:24px; display:flex; flex-wrap:wrap; gap:12px; align-items:center;">
+            <button type="button" id="start-test-btn" class="btn btn-primary">Comenzar Test Ahora</button>
+            <a href="newtest.html" class="btn btn-secondary">Ir al Test de Farnsworth</a>
+          </div>
+        </div>
+
+        <!-- Paso 2: Desarrollo del Test -->
+        <div id="test-play-view" class="test-card" hidden>
+          <div style="display:flex; justify-content:space-between; align-items:center; gap:12px; flex-wrap:wrap; margin-bottom:12px;">
+            <strong id="progress-text" class="mono">Lámina 1 de 8</strong>
+            <span id="plate-timer-label" class="mono" style="color:var(--accent-secondary); font-weight:600;" hidden></span>
+          </div>
+          <div class="progress-track" aria-hidden="true">
+            <div id="progress-bar-fill" class="progress-fill" style="width:12.5%;"></div>
+          </div>
+
+          <h2 id="question-prompt" style="margin-top:24px; text-align:center;">¿Qué número distinguís dentro del círculo?</h2>
+
+          <div class="plate-frame" id="plate-container"></div>
+
+          <div class="options-grid" id="options-container"></div>
+
+          <div style="margin-top:24px; display:flex; justify-content:flex-end;">
+            <button type="button" id="next-plate-btn" class="btn btn-primary" disabled>Siguiente lámina</button>
+          </div>
+        </div>
+
+        <!-- Paso 3: Resultados Detallados -->
+        <div id="test-result-view" class="test-card" hidden>
+          <span id="result-status-label" class="kicker">Resultado</span>
+          <h2 id="result-title">Diagnóstico orientativo</h2>
+          <div style="margin-top:16px; display:flex; align-items:baseline; gap:12px;">
+            <span style="color:var(--text-muted); font-weight:600;">Coincidencias esperadas:</span>
+            <strong id="result-score" class="mono" style="font-size:1.75rem; color:var(--accent-primary);">0 / 8</strong>
+          </div>
+          <p id="result-summary" style="margin-top:12px;"></p>
+
+          <div class="notice-box notice-box-warning" style="margin-top:20px;">
+            <span class="notice-icon" aria-hidden="true">ℹ</span>
+            <div>
+              <strong>Importante:</strong> esta prueba es una herramienta educativa y de orientación inicial. Para un diagnóstico clínico definitivo (licencias, trámites o evaluación pediátrica), consultá a un médico oftalmólogo u optómetra.
+            </div>
+          </div>
+
+          <h3 style="margin-top:28px; margin-bottom:14px;">Detalle lámina por lámina</h3>
+          <div id="result-breakdown" style="display:grid; gap:12px;"></div>
+
+          <div style="margin-top:28px; display:flex; flex-wrap:wrap; gap:12px;">
+            <button type="button" id="retry-test-btn" class="btn btn-primary">Repetir o cambiar de modo</button>
+            <a href="simulador.html" class="btn btn-secondary">Ver Simulador de Daltonismo</a>
+            <a href="newtest.html" class="btn btn-secondary">Probar Test de Farnsworth</a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <h4>DaltoVisto</h4>
+            <p style="color:var(--text-on-dark-muted); font-size:0.9375rem;">Proyecto estudiantil argentino sobre daltonismo y salud visual.</p>
+          </div>
+          <div>
+            <h4>Herramientas</h4>
+            <ul class="footer-list">
+              <li><a href="test.html">Test de Ishihara</a></li>
+              <li><a href="newtest.html">Test de Farnsworth</a></li>
+              <li><a href="simulador.html">Simulador en Vivo</a></li>
+              <li><a href="miopia.html">Guía sobre Miopía</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Equipo y Docente</h4>
+            <ul class="footer-list">
+              <li>Juan Irigoyen</li>
+              <li>Agustina Esteban</li>
+              <li>Bruno Sestúa</li>
+              <li>Profesor: Andrés Obregón</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Redes sociales</h4>
+            <ul class="footer-list">
+              <li><a href="https://daltovisto.com.ar" target="_blank" rel="noopener noreferrer">Web: daltovisto.com.ar</a></li>
+              <li><a href="https://www.instagram.com/daltovisto/" target="_blank" rel="noopener noreferrer">Instagram: @daltovisto</a></li>
+              <li><a href="https://www.tiktok.com/@daltovisto" target="_blank" rel="noopener noreferrer">TikTok: @daltovisto</a></li>
+              <li><a href="https://www.youtube.com/@Daltovisto" target="_blank" rel="noopener noreferrer">YouTube: DaltoVisto</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>&copy; 2023–2026 DaltoVisto</span>
+          <span>Orientación visual educativa · No reemplaza diagnóstico médico.</span>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="js/common.js"></script>
+    <script type="module" src="js/ishihara-test.js"></script>
+  </body>
 </html>

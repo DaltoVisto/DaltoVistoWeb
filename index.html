@@ -1,116 +1,301 @@
-<!DOCTYPE html>
-<html>
-	<head>
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DaltoVisto · Tests, Simulador y Educación sobre Daltonismo</title>
+    <meta
+      name="description"
+      content="Plataforma educativa e interactiva en español sobre daltonismo y salud visual: test de Ishihara para niños y adultos, test de Farnsworth, simulador de visión en vivo y guía sobre miopía y anteojos."
+    />
+    <meta property="og:title" content="DaltoVisto · Tests, Simulador y Educación sobre Daltonismo" />
+    <meta
+      property="og:description"
+      content="Plataforma educativa e interactiva en español sobre daltonismo y salud visual: test de Ishihara para niños y adultos, test de Farnsworth, simulador de visión en vivo y guía sobre miopía y anteojos."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="shortcut icon" type="image/x-icon" href="img/logo.png" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7GC3DGMSS0"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+      gtag('config', 'G-7GC3DGMSS0');
+    </script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="index.html" class="brand-link">
+          <img src="img/logo.png" alt="DaltoVisto" class="brand-logo" width="38" height="38" />
+          <span>DaltoVisto</span>
+        </a>
 
-		<title>Dalto Visto</title>
-		<meta charset="utf-8">
-		<meta name="description" content="Daltovisto es un proyecto que busca concientizar y detectar el daltonismo">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" type="text/css" href="css/estilo-prueba.css">
-		<link rel="shortcut icon" type="image/x-icon" href="img/logo.png">
-		<meta property="og:title" content="Daltovisto-sitio web sobre daltonismo">
-		<meta property="og:image" content="http://daltovisto.com.ar">
-		<meta property="og:author" content="Agustina Esteban, Bruno Sestúa y Juan Irigoyen">
-		<meta name="keyboard" content="daltonismo, vista, vision, daltovisto, dislexia, ishihara, John Dalton, ojo, ocular, emfermedad, test de daltonismo">
-	<!-- Google tag (gtag.js) -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=G-7GC3DGMSS0"></script>
-		<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
+        <nav class="nav-links" aria-label="Navegación principal">
+          <a href="index.html" class="nav-link">Inicio</a>
+          <a href="test.html" class="nav-link">Test de Visión</a>
+          <a href="simulador.html" class="nav-link">Simulador</a>
+          <a href="info.html" class="nav-link">Más info</a>
+          <a href="contacto.html" class="nav-link">Contacto</a>
+        </nav>
 
-		gtag('config', 'G-7GC3DGMSS0');
-		</script>
+        <div class="header-actions">
+          <a href="test.html" class="btn btn-primary btn-sm header-cta">Hacer el Test</a>
+          <button
+            type="button"
+            id="mobile-menu-toggle"
+            class="mobile-toggle"
+            aria-label="Abrir menú"
+            aria-expanded="false"
+            aria-controls="mobile-drawer"
+          >
+            ☰
+          </button>
+        </div>
+      </div>
 
-	</head>
-	<body>
-		<!--COMIENZA EL HEADER-->
-		<header class="header-index">
-			<!--BARRA DE NAVEGACION-->
-			<nav>
-				<a href="index.html"><img src="img/logo.png" width="70px"></a>
-				<a href="index.html" class="linkheader">Inicio</a>
-				<a href="contacto.html" class="linkheader">Contacto</a>
-				<a href="info.html" class="linkheader">Más info</a>
+      <div id="mobile-drawer" class="mobile-drawer">
+        <div class="mobile-drawer-links">
+          <a href="index.html">Inicio</a>
+          <a href="test.html">Test de Visión (Ishihara)</a>
+          <a href="newtest.html">Test de Farnsworth</a>
+          <a href="simulador.html">Simulador de Daltonismo</a>
+          <a href="info.html">Más info y Genética</a>
+          <a href="miopia.html">Salud Visual y Miopía</a>
+          <a href="contacto.html">Contacto</a>
+        </div>
+        <a href="test.html" class="btn btn-primary mobile-drawer-cta">Hacer el Test Ahora</a>
+      </div>
+    </header>
 
-			</nav>
-			<!--IMAGEN DE FONDO-->
-			<h1 class="textos-header">Daltonismo</h1>
-		</section>
-		<!--WAVE-->
-				<div class="wave" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #ffffff;"></path></svg></div>
-		<section class="section_img">
-		</header>
-		<!--CIERRA EL HEADER-->
-		<!--INICIA MAIN-->
-		<main>
-			<h2 class="titulo">¿Qué es el daltonismo?</h2>
-			<section class="contenedor-sobre-nosotros">	
-				<!--ILUSTRACION-->
-				<div>
-				<img class="img-about-us" src="img/ilustracion2.png" class="imagen">
-				</div>
-				<div class="contenido-texto">
-					<h3>El daltonismo es una alteración de origen genético que afecta a la capacidad de distinguir los colores. La palabra daltonismo proviene del químico y matemático John Dalton, que la estudió.</h3>
-				<!--TEST DE ISHIHARA-->
-				<a href="test.html" class="textoboton"><button class="boxtest">Test de Ishihara</button></a>
-				</div>
-			</div>
-		</section>
-		<section class="portafolio">
-			<div class="contenedor">
-				<h2 class="titulo">Otros productos</h2>
-				<!--ITEMS DE LA PÁGINA-->
-				<div class="galeria-port">
-					<div class="imagen-port">
-						<img class="img-principal" src="img/ishihara.jpg" alt="">
-						<div class="hover-galeria">
-							<img src="img/icono1.jpg" alt="">
-							<p><a href="ishihara.html">Test de ishihara</a></p>
-						</div>
-					</div>
-					<div class="imagen-port">
-						<img class="img-principal" src="img/farnsworthimg.jpg" alt="">
-						<div class="hover-galeria">
-							<img src="img/icono1.jpg" alt="">
-							<p><a href="farnsworth.html">Test de farnsworth</a></p>
-						</div>
-					</div>
-					<div class="imagen-port">
-						<img class="img-principal" src="img/anteojos.jpg" alt="">
-						<div class="hover-galeria">
-							<img src="img/icono1.jpg" alt="">
-							<p><a href="anteojos.html">Anteojos para daltónicos</a></p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		</main>
-		<footer>
-			<!--FOOTER-->
-			<div class="contenedor-footer">
-				<div class="content-foo">
-					<h4>Owners:</h4>
-					<p>Juan Irigoyen</p>
-					<p>Agustina Esteban</p>
-					<p>Bruno Sestúa</p>
-				</div>
-				<div class="content-foo">
-					<h4>Redes sociales:</h4>
-					<p>Google: daltovisto.com.ar</p>
-					<p>Instagram: daltovisto</p>
-					<p>Tiktok: daltovisto</p>
-					<p>Youtube: Daltovisto</p>
-				</div>
-				<div class="content-foo">
-					<h4>Profesor:</h4>
-					<p>Andrés Obregón</p>
-				</div>
-			</div> 
-			<h2 class="titulo-final">&copy; Daltovisto2023 </h2>
-		</footer>
-		<a href="https://www.instagram.com/daltovisto/" target="_blank"><img src="img/Instagram.jpg" class="logowhats"></a>
-		<script type="text/javascript" src="js/fuction.js"></script>
-	</body>
+    <main>
+      <!-- Hero Principal -->
+      <section class="hero">
+        <img src="img/ojo.jpg" alt="Ojo humano iluminado con espectro de colores" class="hero-bg" />
+        <div class="hero-scrim" aria-hidden="true"></div>
+        <div class="container">
+          <div class="hero-content">
+            <span class="kicker" style="color:#93c5fd;">Educación visual interactiva · Para niños y adultos</span>
+            <h1>Descubrí cómo percibís los colores del mundo</h1>
+            <p class="hero-subtitle">
+              Realizá pruebas orientativas de daltonismo adaptadas a todas las edades, probá nuestro simulador en vivo para ver como una persona daltónica y conocé soluciones reales de salud visual.
+            </p>
+            <div class="hero-cta-group">
+              <a href="test.html" class="btn btn-primary">Hacer Test de Ishihara</a>
+              <a href="simulador.html" class="btn btn-outline-light">Probar Simulador en Vivo</a>
+            </div>
+            <div class="hero-meta">
+              <span>Modo Niños con figuras</span>
+              <span aria-hidden="true">·</span>
+              <span>Test Clásico y Farnsworth</span>
+              <span aria-hidden="true">·</span>
+              <span>Proyecto educativo argentino</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Selector Dual: Niños vs Adultos -->
+      <section class="section section-muted">
+        <div class="container">
+          <div class="section-header">
+            <span class="kicker">Elegí tu recorrido</span>
+            <h2>Diseñado para que chicos, familias y adultos aprendan jugando</h2>
+            <p class="section-lead">
+              Los niños pequeños muchas veces aún no reconocen números complejos. Por eso creamos dos modos claros dentro de la misma plataforma.
+            </p>
+          </div>
+
+          <div class="grid-2">
+            <article class="card card-interactive">
+              <span class="card-kicker">Niños y Escuelas · 5 a 12 años</span>
+              <h3>Modo Explorador con Figuras</h3>
+              <p>
+                Láminas amigables con estrellas, círculos, triángulos y corazones en lugar de números, junto al reto interactivo de encontrar la rana oculta y el juego de ordenar fichas de color.
+              </p>
+              <div class="card-footer">
+                <a href="test.html?modo=ninos" class="btn btn-primary">Iniciar Test para Niños</a>
+                <a href="simulador.html" class="btn btn-secondary">Jugar con el Simulador</a>
+              </div>
+            </article>
+
+            <article class="card card-interactive">
+              <span class="card-kicker">Jóvenes, Adultos y Docentes</span>
+              <h3>Modo Completo y Simulación Real</h3>
+              <p>
+                Test de Ishihara clásico con verificación previa de brillo y pantalla, Test de Farnsworth interactivo (D-15 y 85 tonos), simulador con fotos propias o cámara y análisis genético.
+              </p>
+              <div class="card-footer">
+                <a href="test.html" class="btn btn-primary">Test Clásico (Números)</a>
+                <a href="newtest.html" class="btn btn-secondary">Test de Farnsworth</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ¿Qué es el daltonismo? + Simulador Instantáneo -->
+      <section class="section">
+        <div class="container">
+          <div class="sandbox-layout">
+            <div class="stage-panel">
+              <div class="split-viewer" id="sim-viewer" aria-label="Comparador interactivo entre visión normal y daltonismo">
+                <canvas id="sim-base-canvas"></canvas>
+                <canvas id="sim-filtered-canvas"></canvas>
+                <div class="split-divider" id="sim-divider"></div>
+                <div class="split-handle" id="sim-handle" aria-hidden="true">⇄</div>
+              </div>
+              <div class="split-labels">
+                <span>Izquierda: Visión Normal</span>
+                <span id="sim-mode-title">Deuteranopía (Sin conos verdes M)</span>
+              </div>
+              <div style="margin-top:12px;">
+                <label for="sim-split-range" class="sr-only">Deslizador comparador de visión</label>
+                <input id="sim-split-range" type="range" min="5" max="95" value="50" style="width:100%;" />
+              </div>
+            </div>
+
+            <div class="deck-panel">
+              <span class="kicker">¿Qué es el daltonismo?</span>
+              <h2>Una forma distinta de interpretar la luz en la retina</h2>
+              <p>
+                El daltonismo es una alteración genética (en su mayoría ligada al cromosoma X) que afecta a los <strong>conos</strong>, las células de la retina encargadas de captar el rojo, el verde y el azul. Su nombre proviene del químico <strong>John Dalton</strong>, quien lo describió científicamente en 1794.
+              </p>
+              <p id="sim-mode-desc" style="font-size:0.9375rem;">
+                Déficit en conos M (verde). Los tonos verdes y rojos se confunden entre sí.
+              </p>
+
+              <div>
+                <p style="font-weight:600; font-size:0.875rem; color:var(--text-primary); margin-bottom:8px;">
+                  Probá cambiar la simulación en vivo:
+                </p>
+                <div class="segmented" role="group" aria-label="Tipo de visión a simular">
+                  <button type="button" data-cvd-mode="deuteranopia" class="is-active" aria-pressed="true">Deuteranopía</button>
+                  <button type="button" data-cvd-mode="protanopia" aria-pressed="false">Protanopía</button>
+                  <button type="button" data-cvd-mode="tritanopia" aria-pressed="false">Tritanopía</button>
+                  <button type="button" data-cvd-mode="acromatopsia" aria-pressed="false">Acromatopsia</button>
+                </div>
+              </div>
+
+              <div class="card-footer">
+                <a href="simulador.html" class="btn btn-primary">Abrir Simulador Completo</a>
+                <a href="info.html" class="btn btn-secondary">Ver Ciencia y Estadísticas</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Herramientas, Pruebas y Salud Visual (cards con títulos siempre visibles) -->
+      <section class="section section-muted">
+        <div class="container">
+          <div class="section-header">
+            <span class="kicker">Pruebas y recursos</span>
+            <h2>Explorá todas las secciones de DaltoVisto</h2>
+            <p class="section-lead">
+              Cada módulo combina explicación visual clara con herramientas prácticas para comprender la visión del color y el enfoque ocular.
+            </p>
+          </div>
+
+          <div class="grid-4">
+            <article class="card card-interactive">
+              <img src="img/ishihara.jpg" alt="Libro físico con láminas del Test de Ishihara" class="card-media" />
+              <span class="card-kicker">Detección rojo-verde</span>
+              <h3>Test de Ishihara</h3>
+              <p>Conocé la historia de las 38 láminas creadas por Shinobu Ishihara y hacé la prueba online.</p>
+              <div class="card-footer">
+                <a href="ishihara.html" class="btn btn-secondary btn-sm">Leer guía</a>
+                <a href="test.html" class="btn btn-primary btn-sm">Hacer test</a>
+              </div>
+            </article>
+
+            <article class="card card-interactive">
+              <img src="img/farnsworthimg.jpg" alt="Bandeja acrílica con fichas de colores del Test de Farnsworth" class="card-media" />
+              <span class="card-kicker">Ordenamiento cromático</span>
+              <h3>Test de Farnsworth</h3>
+              <p>Ordená fichas de tonalidades sutiles en modo rápido de 15 fichas o completo de 85 tonos.</p>
+              <div class="card-footer">
+                <a href="farnsworth.html" class="btn btn-secondary btn-sm">Leer guía</a>
+                <a href="newtest.html" class="btn btn-primary btn-sm">Jugar test</a>
+              </div>
+            </article>
+
+            <article class="card card-interactive">
+              <img src="img/anteojos.jpg" alt="Anteojos metálicos sobre roca oscura" class="card-media" />
+              <span class="card-kicker">Asistencia óptica</span>
+              <h3>Anteojos para daltónicos</h3>
+              <p>Cómo funcionan los filtros selectivos de longitud de onda, sus límites reales y cuidados.</p>
+              <div class="card-footer">
+                <a href="anteojos.html" class="btn btn-primary btn-sm">Ver información</a>
+              </div>
+            </article>
+
+            <article class="card card-interactive">
+              <img src="img/miojo.png" alt="Diagrama ocular sobre enfoque de la miopía" class="card-media" style="object-fit:contain; padding:12px;" />
+              <span class="card-kicker">Enfoque y prevención</span>
+              <h3>Miopía y Salud Visual</h3>
+              <p>Causas, síntomas, tipos de miopía y un simulador interactivo de visión borrosa por dioptrías.</p>
+              <div class="card-footer">
+                <a href="miopia.html" class="btn btn-primary btn-sm">Explorar Miopía</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <h4>DaltoVisto</h4>
+            <p style="color:var(--text-on-dark-muted); font-size:0.9375rem;">
+              Proyecto estudiantil argentino dedicado a concientizar, informar y ofrecer herramientas interactivas sobre daltonismo y salud visual para chicos, familias y escuelas.
+            </p>
+          </div>
+
+          <div>
+            <h4>Herramientas</h4>
+            <ul class="footer-list">
+              <li><a href="test.html">Test de Ishihara</a></li>
+              <li><a href="test.html?modo=ninos">Modo Niños (Figuras)</a></li>
+              <li><a href="newtest.html">Test de Farnsworth</a></li>
+              <li><a href="simulador.html">Simulador en Vivo</a></li>
+              <li><a href="miopia.html">Guía sobre Miopía</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4>Equipo y Docente</h4>
+            <ul class="footer-list">
+              <li>Juan Irigoyen</li>
+              <li>Agustina Esteban</li>
+              <li>Bruno Sestúa</li>
+              <li>Profesor: Andrés Obregón</li>
+            </ul>
+          </div>
+
+          <div>
+            <h4>Redes sociales</h4>
+            <ul class="footer-list">
+              <li><a href="https://daltovisto.com.ar" target="_blank" rel="noopener noreferrer">Web: daltovisto.com.ar</a></li>
+              <li><a href="https://www.instagram.com/daltovisto/" target="_blank" rel="noopener noreferrer">Instagram: @daltovisto</a></li>
+              <li><a href="https://www.tiktok.com/@daltovisto" target="_blank" rel="noopener noreferrer">TikTok: @daltovisto</a></li>
+              <li><a href="https://www.youtube.com/@Daltovisto" target="_blank" rel="noopener noreferrer">YouTube: DaltoVisto</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <span>&copy; 2023–2026 DaltoVisto · Todos los derechos reservados</span>
+          <span>Las pruebas online son orientativas y no reemplazan un diagnóstico oftalmológico.</span>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="js/common.js"></script>
+    <script type="module" src="js/simulador.js"></script>
+  </body>
 </html>
